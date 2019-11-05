@@ -6,5 +6,15 @@
 
 module.exports = {
   siteName: '2020.fruechtl.me',
-  plugins: []
+  plugins: [{
+    use: "@gridsome/source-filesystem",
+    options: {
+      path: "content/blog/**/*.md",
+      typeName: "Post",
+      route: '/blog/:slug'
+    }
+  }],
+  transformers: {
+    remark: {}
+  },
 }
