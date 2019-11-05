@@ -26,7 +26,7 @@ query {
 <script>
 export default {
   metaInfo: {
-    title: "2020.fruechtl.me"
+    title: "Blog"
   }
 };
 </script>
