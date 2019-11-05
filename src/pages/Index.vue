@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <li v-for="{ node } in $page.posts.edges" :key="node._id">
-      <span>
+    <section>
+      <article v-for="{ node } in $page.posts.edges" :key="node._id">
         <h2 v-html="node.title" />
         <div v-html="node.content"></div>
-      </span>
-    </li>
+      </article>
+    </section>
   </Layout>
 </template>
 
