@@ -2,8 +2,8 @@
   <Layout>
     <section>
       <article v-for="{ node } in $page.posts.edges" :key="node._id">
-        <h2 v-html="node.title" />
-        <div v-html="node.content"></div>
+        <h2>{{node.title}}</h2>
+        <div v-html="markdownToHTML(node.body)"></div>
       </article>
     </section>
   </Layout>
@@ -11,12 +11,13 @@
 
 <page-query>
 query {
-  posts: allPost {
+  posts: allContentfulBlogpost {
     edges {
       node {
         id
         title
-        content
+        publishDate
+        body
       }
     }
   }
@@ -24,9 +25,17 @@ query {
 </page-query>
 
 <script>
+var MarkdownIt = require("markdown-it")();
+
 export default {
   metaInfo: {
     title: "Blog"
+  },
+
+  methods: {
+    markdownToHTML(content) {
+      return MarkdownIt.render(content);
+    }
   }
 };
 </script>

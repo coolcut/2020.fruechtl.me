@@ -13,8 +13,17 @@ module.exports = {
       typeName: "Post",
       route: '/blog/:slug'
     }
+  },{
+    use: '@gridsome/source-contentful',
+    options: {
+      space: process.env.CONTENTFUL_SPACE_ID,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      host: 'cdn.contentful.com',
+      environment: 'master',
+      typeName: 'Contentful'
+    }
   }],
   transformers: {
     remark: {}
-  },
+  }
 }
