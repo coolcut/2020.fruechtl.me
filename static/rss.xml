@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Awesome Blog]]></title><description><![CDATA[My Awesome Blog]]></description><link>https://2020.fruechtl.me</link><generator>RSS for Node</generator><lastBuildDate>Thu, 07 Nov 2019 20:44:15 GMT</lastBuildDate><atom:link href="https://2020.fruechtl.me/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Hi there!]]></title><description><![CDATA[A week ago, I saw [this tweet](https://twitter.com/destroytoday/status/1188617015583526913) by [Jonnie Hallman](https://twitter.com/destroytoday), which inspired me to revamp my personal website again. As Jonnie wrote in his initial post, he wants to capture his progress on this new personal website as he goes building it. I loved this idea and want to try the same thing, but maybe a bit different, we will see.
+
+From where I see it now, my new website should be more focused on me, a bit more personal stuff, and a bit less "professional/portfolio" style. It should be more tailored towards me as a person and what I want to experiment with in the future.
+
+For the first steps, I'm giving [Gridsome](https://gridsome.org) a try. Gridsome is not my final decision in terms of technology yet, but I want to see if it can help me with the goals currently occupying my head.
+
+And maybe, as a positive side effect, this way of capturing my progress will finally break my struggles of keeping a blog up-to-date.]]></description><link>https://2020.fruechtl.me/post/</link><guid isPermaLink="true">https://2020.fruechtl.me/post/</guid><dc:creator><![CDATA[Jan Früchtl]]></dc:creator></item><item><title><![CDATA[Content Source]]></title><description><![CDATA[One thing I always struggled with, when it comes to static site generators, was the lack of visual editing experience. Up until now, I didn't come to terms with only writing and publishing in Markdown files. 
+
+This conclusion may seem weird because I love Markdown itself, and I usually choose this way of writing over any other option. The only part of this experience I hate is making all my final editing choices in [VSCode](https://code.visualstudio.com), [IA Writer](https://ia.net/de/writer), or what have you. It always felt hacky and not right to me for some reason.
+
+Thankfully, in a world full of options, other solutions can bridge this gap for me. One option is a [Headless CMS](https://headlesscms.org), and to my surprise, there are so many different kinds of Headless CMS solutions out there. 🤯 
+
+For the past couple of days, I've looked briefly at the following Headless CMS solutions:
+
+- [Contentful](https://www.contentful.com)
+- [Strapi](https://strapi.io)
+- [Storyblok](https://www.storyblok.com)
+- [Sanity](https://www.sanity.io)
+- [Prismic](https://prismic.io)
+
+All of these seem quite functional and have their pros/cons. For the time being, I decided to go with Contentful. It is an established system in this area of content management, and the free plan seems manageable for me.
+
+With this post, I successfully connected Contentful with my [Gridsome](https://gridsome.org) instance. Next up: Dates and a proper RSS feed.]]></description><link>https://2020.fruechtl.me/post/</link><guid isPermaLink="true">https://2020.fruechtl.me/post/</guid><dc:creator><![CDATA[Jan Früchtl]]></dc:creator></item><item><title><![CDATA[Dates]]></title><description><![CDATA[With a flexible data model, provided by [Contentful](https://www.contentful.com), I’ve added a new date input to my blogpost model. At first, I tried to get something like an internal or predefined `publishDate` provided by Contentful, but this was harder than I expected at first.
+
+With a new date input in place, I was able to render a machine-optimized version of a date to my page. The next step was adding a proper [`<time>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time) tag to every post. With that `<time>` tag and the corresponding date-time attribute, I have the opportunity to render both a human-readable and a machine optimized version of a date to every post.
+
+After that, I rendered the machine-optimized date from Contentful inside the datetime attribute. For the human-readable side of things, I’ve added [moment.js](https://momentjs.com) to my project. 
+
+With the power of `moment.js`, I've added a `moment(DATE_FROM_CONTENTFUL).format("dddd, MMMM Do YYYY")` function call. With that in place, I can now also render an optimized date formatting for humans. The result of this specific formatting is now present on every post.]]></description><link>https://2020.fruechtl.me/post/</link><guid isPermaLink="true">https://2020.fruechtl.me/post/</guid><dc:creator><![CDATA[Jan Früchtl]]></dc:creator></item></channel></rss>
