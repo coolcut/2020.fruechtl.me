@@ -4,6 +4,7 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const Marked = require('marked')
 
 module.exports = {
   siteName: '2020.fruechtl.me',
@@ -21,13 +22,13 @@ module.exports = {
     options: {
       contentTypeName: 'ContentfulBlogpost',
       feedOptions: {
-        title: 'My Awesome Blog',
-        feed_url: 'https://2020.fruechtl.me/rss.xml',
+        title: 'Journal - Jan Früchtl',
+        feed_url: 'https://2020.fruechtl.me/feed.xml',
         site_url: 'https://2020.fruechtl.me'
       },
       feedItemOptions: node => ({
         title: node.title,
-        description: node.body,
+        description: Marked(node.body),
         url: 'https://2020.fruechtl.me/post/',
         author: "Jan Früchtl"
       }),

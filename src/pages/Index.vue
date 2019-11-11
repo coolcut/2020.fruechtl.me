@@ -26,7 +26,7 @@ query {
 </page-query>
 
 <script>
-var MarkdownIt = require("markdown-it")();
+const Marked = require("marked");
 import moment from "moment";
 
 export default {
@@ -36,7 +36,7 @@ export default {
 
   methods: {
     markdownToHTML(content) {
-      return MarkdownIt.render(content);
+      return Marked(content);
     },
 
     humanReadableDate(date) {
