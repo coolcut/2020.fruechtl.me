@@ -22,6 +22,8 @@ module.exports = {
     use: 'gridsome-plugin-rss',
     options: {
       contentTypeName: 'ContentfulBlogpost',
+      dateField: "publishDate",
+      latest: true,
       feedOptions: {
         title: 'Journal - Jan Früchtl',
         feed_url: 'https://2020.fruechtl.me/feed.xml',
