@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const Marked = require('marked')
+const moment = require("moment");
 
 module.exports = {
   siteName: '2020.fruechtl.me',
@@ -30,6 +31,7 @@ module.exports = {
         title: node.title,
         description: Marked(node.body),
         url: 'https://2020.fruechtl.me/post/',
+        date: node.publishDate,
         author: "Jan Früchtl"
       }),
       output: {
