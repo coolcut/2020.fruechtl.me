@@ -9,6 +9,9 @@ const moment = require("moment");
 
 module.exports = {
   siteName: '2020.fruechtl.me',
+  templates: {
+    ContentfulBlogpost: '/blog/:slug',
+  },
   plugins: [{
     use: '@gridsome/source-contentful',
     options: {
@@ -32,7 +35,7 @@ module.exports = {
       feedItemOptions: node => ({
         title: node.title,
         description: Marked(node.body),
-        url: 'https://2020.fruechtl.me/post/',
+        url: `https://2020.fruechtl.me${node.path}`,
         date: node.publishDate,
         author: "Jan Früchtl"
       }),
