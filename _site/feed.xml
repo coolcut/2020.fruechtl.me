@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>2020.fruechtl.me</title>
+	<subtitle></subtitle>
+	<link href="https://2020.fruechtl.me/feed.xml" rel="self"/>
+	<link href="https://2020.fruechtl.me/"/>
+	<updated>2019-11-07T01:00:00+01:00</updated>
+	<id>https://2020.fruechtl.me/</id>
+	<author>
+		<name>Jan Früchtl</name>
+		<email>jan@fruechtl.me</email>
+	</author>
+	
+	<entry>
+		<title>Hi there!</title>
+		<link href="https://2020.fruechtl.me/posts/2019-11-05-hi-there/"/>
+		<updated>2019-11-05T01:00:00+01:00</updated>
+		<id>https://2020.fruechtl.me/posts/2019-11-05-hi-there/</id>
+		<content type="html">&lt;p&gt;A week ago, I saw &lt;a href=&quot;https://twitter.com/destroytoday/status/1188617015583526913&quot;&gt;this tweet&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/destroytoday&quot;&gt;Jonnie Hallman&lt;/a&gt;, which inspired me to revamp my personal website again. As Jonnie wrote in his initial post, he wants to capture his progress on this new personal website as he goes building it. I loved this idea and want to try the same thing, but maybe a bit different, we will see.&lt;/p&gt;
+&lt;p&gt;From where I see it now, my new website should be more focused on me, a bit more personal stuff, and a bit less &amp;quot;professional/portfolio&amp;quot; style. It should be more tailored towards me as a person and what I want to experiment with in the future.&lt;/p&gt;
+&lt;p&gt;For the first steps, I&#39;m giving &lt;a href=&quot;https://gridsome.org/&quot;&gt;Gridsome&lt;/a&gt; a try. Gridsome is not my final decision in terms of technology yet, but I want to see if it can help me with the goals currently occupying my head.&lt;/p&gt;
+&lt;p&gt;And maybe, as a positive side effect, this way of capturing my progress will finally break my struggles of keeping a blog up-to-date.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Content Source</title>
+		<link href="https://2020.fruechtl.me/posts/2019-11-07-content-source/"/>
+		<updated>2019-11-07T01:00:00+01:00</updated>
+		<id>https://2020.fruechtl.me/posts/2019-11-07-content-source/</id>
+		<content type="html">&lt;p&gt;One thing I always struggled with, when it comes to static site generators, was the lack of visual editing experience. Up until now, I didn&#39;t come to terms with only writing and publishing in Markdown files.&lt;/p&gt;
+&lt;p&gt;This conclusion may seem weird because I love Markdown itself, and I usually choose this way of writing over any other option. The only part of this experience I hate is making all my final editing choices in &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt;, &lt;a href=&quot;https://ia.net/de/writer&quot;&gt;IA Writer&lt;/a&gt;, or what have you. It always felt hacky and not right to me for some reason.&lt;/p&gt;
+&lt;p&gt;Thankfully, in a world full of options, other solutions can bridge this gap for me. One option is a &lt;a href=&quot;https://headlesscms.org/&quot;&gt;Headless CMS&lt;/a&gt;, and to my surprise, there are so many different kinds of Headless CMS solutions out there. 🤯&lt;/p&gt;
+&lt;p&gt;For the past couple of days, I&#39;ve looked briefly at the following Headless CMS solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.contentful.com/&quot;&gt;Contentful&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://strapi.io/&quot;&gt;Strapi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.storyblok.com/&quot;&gt;Storyblok&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.sanity.io/&quot;&gt;Sanity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://prismic.io/&quot;&gt;Prismic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of these seem quite functional and have their pros/cons. For the time being, I decided to go with Contentful. It is an established system in this area of content management, and the free plan seems manageable for me.&lt;/p&gt;
+&lt;p&gt;With this post, I successfully connected Contentful with my &lt;a href=&quot;https://gridsome.org/&quot;&gt;Gridsome&lt;/a&gt; instance. Next up: Dates and a proper RSS feed.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Dates</title>
+		<link href="https://2020.fruechtl.me/posts/2019-11-07-dates/"/>
+		<updated>2019-11-07T01:00:00+01:00</updated>
+		<id>https://2020.fruechtl.me/posts/2019-11-07-dates/</id>
+		<content type="html">&lt;p&gt;With a flexible data model, provided by &lt;a href=&quot;https://www.contentful.com/&quot;&gt;Contentful&lt;/a&gt;, I’ve added a new date input to my blogpost model. At first, I tried to get something like an internal or predefined &lt;code&gt;publishDate&lt;/code&gt; provided by Contentful. It turned out to be harder than I expected at first.&lt;/p&gt;
+&lt;p&gt;With a new date input in place, I was able to render a machine-optimized version of a date to my page. The next step was adding a proper &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time&quot;&gt;&lt;code&gt;&amp;lt;time&amp;gt;&lt;/code&gt;&lt;/a&gt; tag to every post. With a &lt;code&gt;&amp;lt;time&amp;gt;&lt;/code&gt; tag and the corresponding date-time attribute, I have new opportunities. I now can render both a human-readable and a machine optimized version of a date to every post.&lt;/p&gt;
+&lt;p&gt;After that, I rendered the machine-optimized date from Contentful inside the datetime attribute. For the human-readable side of things, I’ve added &lt;a href=&quot;https://momentjs.com/&quot;&gt;moment.js&lt;/a&gt; to my project.&lt;/p&gt;
+&lt;p&gt;With the power of &lt;code&gt;moment.js&lt;/code&gt;, I&#39;ve added a &lt;code&gt;moment(DATE_FROM_CONTENTFUL).format(&amp;quot;dddd, MMMM Do YYYY&amp;quot;)&lt;/code&gt; function call. With that in place, I can now also render an optimized date formatting for humans. The result of this specific formatting is now present in every post.&lt;/p&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,16 @@
+{
+  "title": "2020.fruechtl.me",
+  "url": "https://2020.fruechtl.me/",
+  "description": "",
+  "feed": {
+    "subtitle": "",
+    "filename": "feed.xml",
+    "path": "/feed.xml",
+    "url": "https://2020.fruechtl.me/feed.xml",
+    "id": "https://2020.fruechtl.me/"
+  },
+  "author": {
+    "name": "Jan Früchtl",
+    "email": "jan@fruechtl.me"
+  }
+}
