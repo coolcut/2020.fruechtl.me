@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - 2020.fruechtl.me</title>
+      <link rel="stylesheet" href="/css/main.css">
+  <meta name="description" content="">
+</head>
+<body>
+  <main>
+<h1>Dates</h1>
+
+<p>With a flexible data model, provided by <a href="https://www.contentful.com">Contentful</a>, I’ve added a new date input to my blogpost model. At first, I tried to get something like an internal or predefined <code>publishDate</code> provided by Contentful. It turned out to be harder than I expected at first.</p>
+<p>With a new date input in place, I was able to render a machine-optimized version of a date to my page. The next step was adding a proper <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time"><code>&lt;time&gt;</code></a> tag to every post. With a <code>&lt;time&gt;</code> tag and the corresponding date-time attribute, I have new opportunities. I now can render both a human-readable and a machine optimized version of a date to every post.</p>
+<p>After that, I rendered the machine-optimized date from Contentful inside the datetime attribute. For the human-readable side of things, I’ve added <a href="https://momentjs.com">moment.js</a> to my project.</p>
+<p>With the power of <code>moment.js</code>, I've added a <code>moment(DATE_FROM_CONTENTFUL).format(&quot;dddd, MMMM Do YYYY&quot;)</code> function call. With that in place, I can now also render an optimized date formatting for humans. The result of this specific formatting is now present in every post.</p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - 2020.fruechtl.me</title>
+      <link rel="stylesheet" href="/css/main.css">
+  <meta name="description" content="">
+</head>
+<body>
+  <main>
+
+<header>
+  <h1>
+    <a href="/">2020.fruechtl.me</a>
+  </h1>
+</header>
+
+
+
+  <article>
+    <h2><a href="/posts/2019-11-07-dates/">Dates</a></h2>
+    <time datetime="2019-11-07">Thursday, November 7th 2019</time>
+    <p>With a flexible data model, provided by <a href="https://www.contentful.com">Contentful</a>, I’ve added a new date input to my blogpost model. At first, I tried to get something like an internal or predefined <code>publishDate</code> provided by Contentful. It turned out to be harder than I expected at first.</p>
+<p>With a new date input in place, I was able to render a machine-optimized version of a date to my page. The next step was adding a proper <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time"><code>&lt;time&gt;</code></a> tag to every post. With a <code>&lt;time&gt;</code> tag and the corresponding date-time attribute, I have new opportunities. I now can render both a human-readable and a machine optimized version of a date to every post.</p>
+<p>After that, I rendered the machine-optimized date from Contentful inside the datetime attribute. For the human-readable side of things, I’ve added <a href="https://momentjs.com">moment.js</a> to my project.</p>
+<p>With the power of <code>moment.js</code>, I've added a <code>moment(DATE_FROM_CONTENTFUL).format(&quot;dddd, MMMM Do YYYY&quot;)</code> function call. With that in place, I can now also render an optimized date formatting for humans. The result of this specific formatting is now present in every post.</p>
+
+  </article>
+
+  <article>
+    <h2><a href="/posts/2019-11-07-content-source/">Content Source</a></h2>
+    <time datetime="2019-11-07">Thursday, November 7th 2019</time>
+    <p>One thing I always struggled with, when it comes to static site generators, was the lack of visual editing experience. Up until now, I didn't come to terms with only writing and publishing in Markdown files.</p>
+<p>This conclusion may seem weird because I love Markdown itself, and I usually choose this way of writing over any other option. The only part of this experience I hate is making all my final editing choices in <a href="https://code.visualstudio.com">VSCode</a>, <a href="https://ia.net/de/writer">IA Writer</a>, or what have you. It always felt hacky and not right to me for some reason.</p>
+<p>Thankfully, in a world full of options, other solutions can bridge this gap for me. One option is a <a href="https://headlesscms.org">Headless CMS</a>, and to my surprise, there are so many different kinds of Headless CMS solutions out there. 🤯</p>
+<p>For the past couple of days, I've looked briefly at the following Headless CMS solutions:</p>
+<ul>
+<li><a href="https://www.contentful.com">Contentful</a></li>
+<li><a href="https://strapi.io">Strapi</a></li>
+<li><a href="https://www.storyblok.com">Storyblok</a></li>
+<li><a href="https://www.sanity.io">Sanity</a></li>
+<li><a href="https://prismic.io">Prismic</a></li>
+</ul>
+<p>All of these seem quite functional and have their pros/cons. For the time being, I decided to go with Contentful. It is an established system in this area of content management, and the free plan seems manageable for me.</p>
+<p>With this post, I successfully connected Contentful with my <a href="https://gridsome.org">Gridsome</a> instance. Next up: Dates and a proper RSS feed.</p>
+
+  </article>
+
+  <article>
+    <h2><a href="/posts/2019-11-05-hi-there/">Hi there!</a></h2>
+    <time datetime="2019-11-05">Tuesday, November 5th 2019</time>
+    <p>A week ago, I saw <a href="https://twitter.com/destroytoday/status/1188617015583526913">this tweet</a> by <a href="https://twitter.com/destroytoday">Jonnie Hallman</a>, which inspired me to revamp my personal website again. As Jonnie wrote in his initial post, he wants to capture his progress on this new personal website as he goes building it. I loved this idea and want to try the same thing, but maybe a bit different, we will see.</p>
+<p>From where I see it now, my new website should be more focused on me, a bit more personal stuff, and a bit less &quot;professional/portfolio&quot; style. It should be more tailored towards me as a person and what I want to experiment with in the future.</p>
+<p>For the first steps, I'm giving <a href="https://gridsome.org">Gridsome</a> a try. Gridsome is not my final decision in terms of technology yet, but I want to see if it can help me with the goals currently occupying my head.</p>
+<p>And maybe, as a positive side effect, this way of capturing my progress will finally break my struggles of keeping a blog up-to-date.</p>
+
+  </article>
+
+
+
+</main>
+</body>
+</html>

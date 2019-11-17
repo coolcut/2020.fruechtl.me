@@ -1,0 +1,7 @@
+{% for post in postslist %}
+  <article>
+    <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate}}</time>
+    {{ post.templateContent | safe }}
+  </article>
+{% endfor %}
