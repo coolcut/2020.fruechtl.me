@@ -2,6 +2,7 @@
 title: Hi there!
 date: 2019-11-05
 layout: layouts/post.njk
+media: []
 
 ---
 A week ago, I saw [this tweet](https://twitter.com/destroytoday/status/1188617015583526913) by [Jonnie Hallman](https://twitter.com/destroytoday), which inspired me to revamp my personal website again. As Jonnie wrote in his initial post, he wants to capture his progress on this new personal website as he goes building it. I loved this idea and want to try the same thing, but maybe a bit different, we will see.

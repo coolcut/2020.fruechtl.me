@@ -22,4 +22,5 @@ fields:
   config: {}
   label: media
 pages:
+- posts/hi-there.md
 - posts/eleventy.md
