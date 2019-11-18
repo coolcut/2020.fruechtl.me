@@ -2,6 +2,7 @@
 title: Content Source
 date: 2019-11-07
 layout: layouts/post.njk
+media: []
 
 ---
 One thing I always struggled with, when it comes to static site generators, was the lack of visual editing experience. Up until now, I didn't come to terms with only writing and publishing in Markdown files.
