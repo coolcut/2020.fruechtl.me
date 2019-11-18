@@ -9,10 +9,10 @@ sections:
   label: Posts
   create: documents
   match: "**/*.md"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: ''
+public_path: https://res.cloudinary.com/dy3alb7gv/image/upload
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   install_dependencies_command: npm install
