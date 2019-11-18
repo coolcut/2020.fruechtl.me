@@ -17,5 +17,9 @@ fields:
   config:
     required: true
   default: layouts/post.njk
+- name: media
+  type: image_gallery
+  config: {}
+  label: media
 pages:
 - posts/eleventy.md
