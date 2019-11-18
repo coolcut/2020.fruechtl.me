@@ -8,8 +8,14 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    required: true
 - type: text
   name: layout
   label: layout
+  hidden: true
+  config:
+    required: true
+  default: layouts/post.njk
 pages:
 - posts/eleventy.md
