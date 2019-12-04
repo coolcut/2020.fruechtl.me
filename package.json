@@ -20,8 +20,8 @@
   "dependencies": {
     "@11ty/eleventy": "^0.9.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "moment": "^2.24.0",
-    "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.0.2"
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.5",
+    "moment": "^2.24.0"
   }
 }
