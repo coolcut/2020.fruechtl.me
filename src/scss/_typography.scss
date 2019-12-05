@@ -1,0 +1,41 @@
+:root {
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Apercu Pro", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-feature-settings: "ss01" on, "ss02" on, "zero" on;
+  line-height: 1.65;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: $text-link-color;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-decoration-color: $text-link-color;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration-color: $brand-color;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Value Serif Pro", serif;
+  font-feature-settings: "sinf" on, "ss04" on, "ss05" on, "ss02" on, "ss07" on;
+  line-height: 1.25;
+  color: $text-headline-color;
+}

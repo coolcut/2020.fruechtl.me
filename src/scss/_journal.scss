@@ -1,0 +1,36 @@
+.journal-posts,
+.post {
+  margin: 0 auto;
+  max-width: 72ch;
+}
+
+.post-header {
+  margin: 0 0 32px;
+}
+
+.post-title {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.post-title__link {
+  color: $text-link-color;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 4px;
+  text-decoration-color: $text-link-color;
+}
+
+time {
+  display: block;
+  font-size: 0.8rem;
+  color: $text-caption-color;
+}
+
+.post-preview {
+  margin: 0 0 32px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
