@@ -1,7 +1,10 @@
+<section class="journal-posts">
 {% for post in postslist %}
-  <article>
-    <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
-    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate}}</time>
-    {{ post.templateContent | safe }}
+  <article class="post-preview">
+    <h2 class="post-title">
+      <a class="post-title__link" href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h2>
+    <time class="post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate}}</time>
   </article>
 {% endfor %}
+</section>

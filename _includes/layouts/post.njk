@@ -2,6 +2,10 @@
 layout: layouts/base.njk
 ---
 
-<h1>{{ title }}</h1>
-
-{{ content | safe }}
+<article class="post">
+  <div class="post-header">
+    <h1 class="post-title">{{ title }}</h1>
+    <time class="post-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate}}</time>
+  </div>
+  {{ content | safe }}
+</article>
