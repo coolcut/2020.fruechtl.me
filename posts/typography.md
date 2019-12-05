@@ -1,11 +1,11 @@
 ---
 layout: layouts/post.njk
 title: Typography
-date: 2019-12-05T00:00:00+01:00
+date: 2019-12-04T23:00:00.000+00:00
 media: []
 
 ---
-After a short break travel break, I want to continue with the process of building this new site. Usually, after a pause, it is always hard to come back. To make this process a little easier for me, I thought it would be a good idea to look for some typefaces I want to use for the site.
+After a short travel break, I want to continue with the process of building this new site. Usually, after a pause, it is always hard to come back. To make this process a little easier for me, I thought it would be a good idea to look for some typefaces I want to use for the site.
 
 During the past years, I collected a library of links with beautiful typefaces I want to use on future projects. Besides that, I also went thought the recent posts on [Typewolf](https://www.typewolf.com/) to get some more inspiration.
 
