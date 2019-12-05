@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "gulp build && gulp watch && eleventy --serve",
+    "dev": "gulp build & gulp watch & eleventy --serve",
     "build": "gulp build && yarn fonts && eleventy",
     "fonts": "wget -O fonts.zip $FONTS_URL; unzip fonts.zip -d ./; rm fonts.zip"
   },
