@@ -13,8 +13,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "gulp build & gulp watch & npx eleventy --serve",
-    "build": "npx eleventy",
-    "debug": "DEBUG=* npx eleventy"
+    "build": "gulp build & fonts:fetch & npx eleventy",
+    "fonts:fetch": "wget -O fonts.zip $FONTS_URL; unzip fonts.zip -d ./fonts; rm fonts.zip"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.9.0",
