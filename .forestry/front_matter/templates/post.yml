@@ -22,8 +22,8 @@ fields:
   config: {}
   label: media
 pages:
-- posts/typography.md
-- posts/eleventy.md
-- posts/dates.md
-- posts/content-source.md
 - posts/hi-there.md
+- posts/content-source.md
+- posts/dates.md
+- posts/eleventy.md
+- posts/typography.md
