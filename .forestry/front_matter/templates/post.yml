@@ -4,15 +4,19 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+- name: draft
+  type: boolean
+  label: Draft
+  default: true
 - type: datetime
   name: date
-  label: date
+  label: Date
   config:
     required: true
 - type: text
   name: layout
-  label: layout
+  label: Layout
   hidden: true
   config:
     required: true
@@ -20,10 +24,10 @@ fields:
 - name: media
   type: image_gallery
   config: {}
-  label: media
+  label: Media
 pages:
 - posts/typography.md
-- posts/hi-there.md
-- posts/content-source.md
-- posts/dates.md
 - posts/eleventy.md
+- posts/dates.md
+- posts/content-source.md
+- posts/hi-there.md
