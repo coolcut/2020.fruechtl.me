@@ -4,3 +4,4 @@ package-lock.json
 .DS_Store
 /css/main.css
 /fonts
+/_includes/css

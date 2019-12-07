@@ -9,7 +9,7 @@ gulp.task('css', function() {
     .pipe(autoprefixer())
     .pipe(cssnano())
     .on('error', sass.logError)
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./_includes/css'));
 });
 
 gulp.task("watch", function() {
