@@ -3,8 +3,10 @@ title: Content Source
 date: 2019-11-07
 layout: layouts/post.njk
 media: []
-
+tags:
+  - redesign
 ---
+
 One thing I always struggled with, when it comes to static site generators, was the lack of visual editing experience. Up until now, I didn't come to terms with only writing and publishing in Markdown files.
 
 This conclusion may seem weird because I love Markdown itself, and I usually choose this way of writing over any other option. The only part of this experience I hate is making all my final editing choices in [VSCode](https://code.visualstudio.com), [IA Writer](https://ia.net/de/writer), or what have you. It always felt hacky and not right to me for some reason.

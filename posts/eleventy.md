@@ -3,8 +3,10 @@ title: Eleventy
 date: 2019-11-18T21:00:00+01:00
 layout: layouts/post.njk
 media: []
-
+tags:
+  - redesign
 ---
+
 Last week I attended [BeyondTellerand Berlin](https://beyondtellerrand.com/events/berlin-2019/speakers), which was, as always, a fantastic conference. This year, the opening talk was given by Jeremy Keith, who talked about [The Layers Of The Web](https://vimeo.com/373128517). This fantastic talk, which you should watch, got me thinking about my tech choice for this new personal site.
 
 Is it essential to use such a massive tool like [Gridsome](https://gridsome.org) to power this site and future playground? I love [Vue](https://vuejs.org/), and it can be a fantastic tool for building web-based applications, but do I really need this kind of power, and do I want to make the people suffer who are visiting the website because of unnecessary bloat they need to download to get the Gridsome experience?
