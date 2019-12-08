@@ -14,7 +14,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getFilteredByGlob(["posts/*.md"]);
+    return collection.getFilteredByGlob(["journal/*.md"]);
   });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
