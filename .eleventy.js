@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRSS);
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
