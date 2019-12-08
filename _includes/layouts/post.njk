@@ -9,13 +9,15 @@ layout: layouts/base.njk
       date | readableDate
     }}</time>
   </div>
-  {{ content | safe }}
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
 
-  <ul>
+  <ul class="c-tags">
     {% for tag in tags %} {%- if tag != "posts" -%} {% set tagUrl %}/tags/{{
       tag
     }}/{% endset %}
-    <li>
+    <li class="c-tag">
       <a href="{{ tagUrl | url }}" class="tag">#{{ tag }}</a>
     </li>
     {%- endif -%} {% endfor %}

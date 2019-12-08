@@ -3,6 +3,8 @@
 @import "font-face";
 @import "typography";
 
+@import "tags";
+
 @import "site-header";
 @import "journal";
 
@@ -30,4 +32,9 @@ main {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 64ch;
 }
