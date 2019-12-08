@@ -5,6 +5,7 @@ layout: layouts/post.njk
 media: []
 tags:
   - redesign
+  - 11ty
 ---
 
 Last week I attended [BeyondTellerand Berlin](https://beyondtellerrand.com/events/berlin-2019/speakers), which was, as always, a fantastic conference. This year, the opening talk was given by Jeremy Keith, who talked about [The Layers Of The Web](https://vimeo.com/373128517). This fantastic talk, which you should watch, got me thinking about my tech choice for this new personal site.
