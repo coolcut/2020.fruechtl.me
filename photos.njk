@@ -1,0 +1,11 @@
+---
+layout: layouts/home.njk
+---
+
+<header class="site-header site-header--photos">
+  <h1 class="site-title">Photostream</h1>
+  <p class="site-slogan">This is my personal stream of photos.</p>
+</header>
+
+{% set photos = collections.photos | reverse %}
+{% include "layouts/photos.njk" %}

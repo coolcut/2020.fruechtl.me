@@ -1,0 +1,11 @@
+<section class="photos">
+  <div class="photo-list">
+  {% for photo in photos %}
+    <a id="{{ photo.data.image }}" href="{{ photo.url | url }}">
+      <figure class="photo">
+        <img src="{{ photo.data.image | imgixPhotoList }}" alt="photo.data.description">
+      </figure>
+    </a>
+  {% endfor %}
+  </div>
+</section>

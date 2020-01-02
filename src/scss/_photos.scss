@@ -1,0 +1,64 @@
+.photos {
+  margin: 0 auto;
+  max-width: 96ch;
+}
+
+.site-header--photos {
+  max-width: 96ch;
+}
+
+.photo-list {
+  display: grid;
+  grid-gap: 48px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photo {
+  position: relative;
+  margin: 0;
+
+  img {
+    display: block;
+  }
+}
+
+.photo-close {
+  position: absolute;
+  display: block;
+  top: 24px;
+  right: 24px;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+
+  svg {
+    display: block;
+  }
+}
+
+.photo-frame {
+  margin: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000 center center no-repeat;
+  color: #fff;
+}
+
+.photo-frame__image {
+  position: relative;
+  top: 3rem;
+  width: 100vw;
+  height: calc(100vh - 8rem);
+  object-fit: contain;
+}
+
+.photo-single__item-caption {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+}

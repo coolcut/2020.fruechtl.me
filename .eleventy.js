@@ -17,12 +17,24 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob(["journal/*.md"]);
   });
 
+  eleventyConfig.addCollection("photos", function(collection) {
+    return collection.getFilteredByGlob(["photos/*.md"]);
+  });
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return moment.utc(dateObj).format("dddd, MMMM Do YYYY");
   });
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return moment.utc(dateObj).format("YYYY-MM-DD");
+  });
+
+  eleventyConfig.addFilter('imgixPhotoList', (imageName) => {
+    return `https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&w=1000&ar=1:1&fit=crop&q=85&fm=jpg&auto=format`
+  });
+
+  eleventyConfig.addFilter('imgixPhotoSingle', (imageName) => {
+    return `https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&h=1500&q=85&fm=jpg&auto=format`
   });
 
   eleventyConfig.addPassthroughCopy("img");
