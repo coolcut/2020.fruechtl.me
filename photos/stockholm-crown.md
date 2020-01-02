@@ -1,6 +1,6 @@
 ---
 title: BeyondTellerand
-date: 2019-11-07
+date: 2019-10-08
 layout: layouts/photo.njk
-image: stockholm-vrown.jpg
+image: stockholm-crown.jpg
 ---
