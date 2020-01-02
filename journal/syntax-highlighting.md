@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Syntax Highlighting
-date: 2019-12-08T08:30:00+01:00
+date: 2019-12-08T08:30:00
 media: []
 tags:
   - redesign

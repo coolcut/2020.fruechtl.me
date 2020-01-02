@@ -1,7 +1,7 @@
 ---
-title: Eleventy
-date: 2019-11-18T21:00:00+01:00
 layout: layouts/post.njk
+title: Eleventy
+date: 2019-11-18T21:00:00
 media: []
 tags:
   - redesign
