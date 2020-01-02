@@ -78,6 +78,13 @@
   svg {
     display: block;
   }
+
+  &:hover,
+  &:focus {
+    svg {
+      opacity: 0.72;
+    }
+  }
 }
 
 .photo-frame {
