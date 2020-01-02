@@ -14,21 +14,14 @@ eleventyExcludeFromCollections: true
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
 	</author>
-	{%- for post in collections.photos %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+	{%- for photo in collections.photos %}
+	{% set absolutePostUrl %}{{ photo.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
-		<title>{{ post.data.title }}</title>
+		<title>{{ photo.data.title }}</title>
 		<link href="{{ absolutePostUrl }}"/>
-		<updated>{{ post.date | rssDate }}</updated>
+		<updated>{{ photo.date | rssDate }}</updated>
 		<id>{{ absolutePostUrl }}</id>
-		<content type="html">
-			<img class="photo-frame__image" src="{{ post.imageSource | imgixPhotoSingle }}" alt="{{ post.imageAlt }}" />
-			{% if content %}
-			<figcaption class="photo-single__item-caption">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</figcaption>
-			{% else %}
-			<figcaption class="photo-single__item-caption">{{ title }}</figcaption>
-			{% endif %}
-		</content>
+		<content type="html">{{ photo.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 	</entry>
 	{%- endfor %}
 </feed>

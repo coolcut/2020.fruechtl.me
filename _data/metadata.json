@@ -4,7 +4,7 @@
   "description": "Product designer focused on design systems at BRYTER. I’m documenting my process in redefining my site.",
   "feed": {
     "title": "Journal - Jan Früchtl",
-    "subtitle": "",
+    "subtitle": "This is a subtitle",
     "filename": "feed.xml",
     "path": "/feed.xml",
     "url": "https://fruechtl.me/feed.xml",
@@ -12,7 +12,7 @@
   },
   "photoFeed": {
     "title": "Photos - Jan Früchtl",
-    "subtitle": "",
+    "subtitle": "This is a subtitle",
     "filename": "feed.xml",
     "path": "/photos/feed.xml",
     "url": "https://fruechtl.me/photos/feed.xml",
