@@ -1,6 +1,7 @@
 ---
-title: BeyondTellerand
+title: Statue in the heart of Stockholm
 date: 2019-10-08
 layout: layouts/photo.njk
-image: stockholm-statue.jpg
+imageId: stockholm-statue
+imageSource: stockholm-statue.jpg
 ---

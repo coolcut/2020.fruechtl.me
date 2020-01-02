@@ -1,9 +1,9 @@
 <section class="photos">
   <div class="photo-list">
   {% for photo in photos %}
-    <a id="{{ photo.data.image }}" class="photo-list__link" href="{{ photo.url | url }}">
+    <a id="{{ photo.data.imageId }}" class="photo-list__link" href="{{ photo.url | url }}">
       <figure class="photo">
-        <img src="{{ photo.data.image | imgixPhotoList }}" alt="photo.data.description">
+        <img src="{{ photo.data.imageSource | imgixPhotoList }}" alt="photo.data.description">
       </figure>
       <time class="photo-list__date" datetime="{{ photo.date | htmlDateString }}">{{ photo.date | readableDate}}</time>
     </a>

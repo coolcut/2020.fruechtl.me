@@ -1,6 +1,7 @@
 ---
-title: BeyondTellerand
+title: Small street in Stockholm
 date: 2019-10-08
 layout: layouts/photo.njk
-image: stockholm-tight-street-2.jpg
+imageId: stockholm-tight-street-2
+imageSource: stockholm-tight-street-2.jpg
 ---

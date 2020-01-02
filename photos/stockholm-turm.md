@@ -1,6 +1,7 @@
 ---
-title: BeyondTellerand
+title: Tower in Stockholm
 date: 2019-10-08
 layout: layouts/photo.njk
-image: stockholm-turm.jpg
+imageId: stockholm-turm
+imageSource: stockholm-turm.jpg
 ---

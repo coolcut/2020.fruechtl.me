@@ -1,6 +1,7 @@
 ---
-title: BeyondTellerand
+title: Street by night n Stockholm
 date: 2019-10-07
 layout: layouts/photo.njk
-image: stockholm-street-night.jpg
+imageId: stockholm-street-night
+imageSource: stockholm-street-night.jpg
 ---

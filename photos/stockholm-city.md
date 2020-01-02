@@ -1,6 +1,7 @@
 ---
-title: Last week
+title: Stockholm City View
 date: 2019-10-08
 layout: layouts/photo.njk
-image: stockholm-city.jpg
+imageId: stockholm-city
+imageSource: stockholm-city.jpg
 ---
