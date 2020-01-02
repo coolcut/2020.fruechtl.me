@@ -101,10 +101,15 @@
 
 .photo-frame__image {
   position: relative;
-  top: 3rem;
+  top: 5rem;
   width: 100vw;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 16rem);
   object-fit: contain;
+
+  @media (min-width: 960px) {
+    top: 3rem;
+    height: calc(100vh - 8rem);
+  }
 }
 
 .photo-single__item-caption {
