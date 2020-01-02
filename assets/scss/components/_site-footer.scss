@@ -1,17 +1,24 @@
-.c-site-footer {
+/* ------------------------------------------------------------------
+||  Footer
+------------------------------------------------------------------- */
+.site-footer {
   margin: 0 auto;
   padding: 72px 16px;
+  max-width: 96ch;
+}
+
+.site-footer--small {
   max-width: 64ch;
 }
 
-.c-site-footer__nav {
+.site-footer__nav {
   display: inline-flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c-site-footer__nav-item {
+.site-footer__nav-item {
   margin-left: 16px;
   font-size: 0.8rem;
 

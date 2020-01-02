@@ -18,5 +18,5 @@ layout: layouts/home.njk
   </defs>
 </svg>
 
-{% set postslist = collections.posts | reverse %}
-{% include "postslist.njk" %}
+{% set posts = collections.posts | reverse %}
+{% include "components/posts.njk" %}

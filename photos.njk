@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/base.njk
 ---
 
 <header class="c-site-header c-site-header--photos">
@@ -8,4 +8,4 @@ layout: layouts/home.njk
 </header>
 
 {% set photos = collections.photos | reverse %}
-{% include "layouts/photos.njk" %}
+{% include "components/photos.njk" %}

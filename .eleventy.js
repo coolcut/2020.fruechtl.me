@@ -34,7 +34,11 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter('imgixPhotoSingle', (imageName) => {
-    return `https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&h=1500&q=85&fm=jpg&auto=format`
+    return `https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&w=1500&q=85&fm=jpg&auto=format`
+  });
+
+  eleventyConfig.addFilter('imgixPhotoSingleSourceSet', (imageName) => {
+    return `https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&w=500&q=85&fm=jpg&auto=format 500w, https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&w=800&q=85&fm=jpg&auto=format 800w, https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&w=1200&q=85&fm=jpg&auto=format 1200w, https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&w=1500&q=85&fm=jpg&auto=format 1500w, https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&w=2000&q=85&fm=jpg&auto=format 2000w`
   });
 
   eleventyConfig.addFilter('imgixPodcastCover', (imageName) => {

@@ -1,0 +1,19 @@
+---
+layout: layouts/bones.njk
+---
+
+<main>{{ content | safe }}</main>
+
+<footer class="site-footer site-footer--small">
+  <ul class="site-footer__nav">
+    <li class="site-footer__nav-item">
+      <a href="{{ '/' | url }}">Journal</a>
+    </li>
+    <li class="site-footer__nav-item">
+      <a href="{{ '/feed.xml' | url }}">RSS Feed</a>
+    </li>
+    <li class="site-footer__nav-item">
+      <a href="{{ '/impressum' | url }}">Impressum</a>
+    </li>
+  </ul>
+</footer>
