@@ -12,4 +12,4 @@ If you are visiting `/photos`, you can see a small collection of photos I took i
 
 The overall feature-set of the photos section is also very limited at the moment. You can see a grid of photos and every single photo on their own. Still, I can imagine that things like albums, stories, private-commenting, and better overall user experience will make this place my own little Instagram in the future.
 
-It is mine. I own it, I built it and want to make it better in the future. In the meantime, feel free to subscribe to the photos-specific RSS feed.
+It is mine. I own it, I built it and want to make it better in the future. In the meantime, feel free to subscribe to the [photos-specific RSS feed](http://fruechtl.me/photos/feed.xml).
