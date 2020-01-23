@@ -1,8 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Typography
-date: 2019-12-05T11:00:00
-media: []
+date: 2019-12-05T17:10:00.000Z
 tags:
   - redesign
   - typography
