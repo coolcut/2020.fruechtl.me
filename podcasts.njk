@@ -1,0 +1,14 @@
+---
+layout: layouts/home.njk
+---
+
+<header class="site-header site-header--photos">
+  <h1 class="site-title">Podcasts</h1>
+  <p class="site-slogan">These are my personal podcast subscriptions</p>
+</header>
+
+{% for podcast in podcasts %}
+  <article class="post-preview">
+    <h2>{{podcast.title}}</h2>
+  </article>
+{% endfor %}

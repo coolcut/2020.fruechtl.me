@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Accidental Tech Podcast",
+    "xmlUrl": "https://atp.fm/episodes?format=rss",
+    "htmlUrl": "https://atp.fm/"
+  },
+  {
+    "title": "Alles gesagt?",
+    "xmlUrl": "https://allesgesagt.podigee.io/feed/mp3",
+    "htmlUrl": "http://www.zeit.de/serie/alles-gesagt"
+  },
+  {
+    "title": "Bandbreite",
+    "xmlUrl": "https://bandbreite.fm/?feed=mp3",
+    "htmlUrl": "https://bandbreite.fm/"
+  },
+  {
+    "title": "Cortex",
+    "xmlUrl": "https://www.relay.fm/cortex/feed",
+    "htmlUrl": "https://www.relay.fm/cortex"
+  },
+  {
+    "title": "Design Details",
+    "xmlUrl": "https://rss.simplecast.com/podcasts/1034/rss",
+    "htmlUrl": "http://spec.fm/podcasts/design-details"
+  },
+  {
+    "title": "Die Wochendämmerung",
+    "xmlUrl": "https://wochendaemmerung.de/feed/m4a/",
+    "htmlUrl": "https://wochendaemmerung.de/"
+  },
+  {
+    "title": "drei90",
+    "xmlUrl": "https://drei90.de/feed/mp3/",
+    "htmlUrl": "https://drei90.de/"
+  },
+  {
+    "title": "Eintracht Frankfurt Podcast",
+    "xmlUrl": "https://www.eintracht-podcast.de/feed/podcast",
+    "htmlUrl": "https://www.eintracht-podcast.de/"
+  },
+  {
+    "title": "Freak Show",
+    "xmlUrl": "https://feeds.metaebene.me/freakshow/m4a",
+    "htmlUrl": "https://freakshow.fm/"
+  },
+  {
+    "title": "Full Stack Radio",
+    "xmlUrl": "https://rss.simplecast.com/podcasts/279/rss",
+    "htmlUrl": "http://fullstackradio.com/"
+  },
+  {
+    "title": "Hello Internet",
+    "xmlUrl": "http://www.hellointernet.fm/podcast?format=rss",
+    "htmlUrl": "http://www.hellointernet.fm/"
+  },
+  {
+    "title": "Lage der Nation (Plus)",
+    "xmlUrl": "https://www.kuechenstud.io/plus/lagedernation-plus-mp3/?member=e7716400002e1f67d165891d135374",
+    "htmlUrl": "https://www.kuechenstud.io/plus"
+  },
+  {
+    "title": "Launched",
+    "xmlUrl": "https://feeds.fireside.fm/launched/rss",
+    "htmlUrl": "https://launchedfm.com/"
+  },
+  {
+    "title": "Layout",
+    "xmlUrl": "https://layout.fm/rss",
+    "htmlUrl": "https://layout.fm/"
+  },
+  {
+    "title": "Logbuch:Netzpolitik",
+    "xmlUrl": "https://feeds.metaebene.me/lnp/m4a",
+    "htmlUrl": "https://logbuch-netzpolitik.de/"
+  },
+  {
+    "title": "Presentable",
+    "xmlUrl": "https://www.relay.fm/presentable/feed",
+    "htmlUrl": "https://www.relay.fm/presentable"
+  },
+  {
+    "title": "WRINT: Wer redet ist nicht tot",
+    "xmlUrl": "https://www.wrint.de/feed/podcast/",
+    "htmlUrl": "http://www.wrint.de/kommt-reden-wir-zusammen/"
+  },
+  {
+    "title": "Wett-Brötchen",
+    "xmlUrl": "https://www.wett-broetchen.de/feed/mp3/",
+    "htmlUrl": "https://www.wett-broetchen.de/"
+  },
+  {
+    "title": "Wir. Müssen Reden",
+    "xmlUrl": "https://wir.muessenreden.de/feed/podcast/",
+    "htmlUrl": "https://wir.muessenreden.de/"
+  }
+]
