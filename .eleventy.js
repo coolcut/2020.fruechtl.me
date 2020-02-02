@@ -37,12 +37,21 @@ module.exports = function(eleventyConfig) {
     return `https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&h=1500&q=85&fm=jpg&auto=format`
   });
 
+  eleventyConfig.addNunjucksShortcode("youtube", function(youTubeId) {
+    return `<div class="video video--youtube">
+              <lite-youtube videoid="${youTubeId}"></lite-youtube>
+            </div>`
+  });
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy('admin/config.yml');
   eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
+
+  eleventyConfig.addPassthroughCopy('node_modules/lite-youtube-embed/src/lite-yt-embed.css');
+  eleventyConfig.addPassthroughCopy('node_modules/lite-youtube-embed/src/lite-yt-embed.js');
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -84,7 +93,7 @@ module.exports = function(eleventyConfig) {
 
     // pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
+    markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
 
