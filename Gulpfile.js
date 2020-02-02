@@ -4,7 +4,7 @@ const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('css', function() {
-  return gulp.src('./src/scss/main.scss')
+  return gulp.src('./assets/scss/main.scss')
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssnano())
@@ -13,7 +13,7 @@ gulp.task('css', function() {
 });
 
 gulp.task("watch", function() {
-  gulp.watch('./src/scss/**/*.scss', gulp.parallel('css'));
+  gulp.watch('./assets/scss/**/*.scss', gulp.parallel('css'));
 });
 
 gulp.task('build', gulp.parallel('css'));
