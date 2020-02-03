@@ -43,9 +43,9 @@ module.exports = function(eleventyConfig) {
             </div>`
   });
 
-  eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("uploads");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy('admin/config.yml');
   eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
