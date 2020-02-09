@@ -1,0 +1,67 @@
+.podcasts {
+  margin: 0 auto;
+  max-width: 64ch;
+}
+
+.podcast-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: podcast-counter;
+}
+
+.podcast-list__item {
+  position: relative;
+  margin: 0 0 3rem;
+  padding: 0 0 0 1rem;
+
+  &::before {
+    counter-increment: podcast-counter;
+    content: counter(podcast-counter);
+
+    position: absolute;
+    top: -1.5rem;
+    margin-left: -1rem;
+    font-family: "Value Serif Pro", serif;
+    font-feature-settings: "ss04" on, "ss05" on, "ss02" on, "ss07" on, "ss03" on,
+      "ss06" on, "ss08" on, "ss01" on, "ordn" on, "zero" on;
+
+    font-size: 3rem;
+    line-height: 1;
+    color: $brand-color;
+    opacity: 0.16;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.podcast-list__title {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.podcast-list__meta {
+  font-size: 0.8rem;
+
+  a {
+    color: $text-caption-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $brand-color;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: 2px;
+      text-decoration-color: $brand-color;
+    }
+  }
+}
+
+.podcast-list__meta-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.25rem;
+}
