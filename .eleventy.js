@@ -37,6 +37,10 @@ module.exports = function(eleventyConfig) {
     return `https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&h=1500&q=85&fm=jpg&auto=format`
   });
 
+  eleventyConfig.addFilter('imgixPodcastCover', (imageName) => {
+    return `https://coolcut.imgix.net/podcasts/${imageName}?ixlib=rb-1.2.1&h=288&q=85&fm=jpg&auto=format`
+  });
+
   eleventyConfig.addNunjucksShortcode("youtube", function(youTubeId) {
     return `<div class="video video--youtube">
               <lite-youtube videoid="${youTubeId}"></lite-youtube>
