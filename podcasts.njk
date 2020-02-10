@@ -5,21 +5,26 @@ layout: layouts/home.njk
 <div class="wrapper">
   <header class="c-site-header c-site-header--photos">
     <h1 class="site-title">Podcasts</h1>
-    <p class="site-slogan">These are my personal podcast subscriptions</p>
+    <p class="site-slogan">These are all my podcast subscriptions. I listen to them in my favorite podcast app <a href="https://overcast.fm">Overcast</a>.</p>
   </header>
 
   <ul class="podcast-list">
   {% for podcast in podcasts %}
-  <li class="podcast-list__item">
-    <h2 class="podcast-list__title">{{podcast.title}}</h2>
-    <div class="podcast-list__meta">
-      <span class="podcast-list__meta-item">
-        <a href="{{podcast.htmlUrl}}">Website</a>
-      </span>
-      <span class="podcast-list__meta-item"> • </span>
-      <span class="podcast-list__meta-item">
-        <a href="{{podcast.xmlUrl}}">Feed</a>
-      </span>
+  <li class="podcast-item">
+    <div class="podcast-item__cover">
+      <img src="/uploads/podcasts/{{podcast.image}}" alt="">
+    </div>
+    <div class="podcast-item__content">
+      <h2 class="podcast-item__title">{{podcast.title}}</h2>
+      <div class="podcast-item__meta">
+        <span class="podcast-list__meta-item">
+          <a href="{{podcast.htmlUrl}}">Website</a>
+        </span>
+        <span class="podcast-item__meta-item"> • </span>
+        <span class="podcast-item__meta-item">
+          <a href="{{podcast.xmlUrl}}">Feed</a>
+        </span>
+      </div>
     </div>
   </li>
   {% endfor %}
