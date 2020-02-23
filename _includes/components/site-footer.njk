@@ -1,0 +1,23 @@
+{% macro footer(class) %}
+<footer class="{{ class | escape }}">
+  <ul class="c-site-footer__nav">
+    <li class="c-site-footer__nav-item">
+      <a href="{{ '/' | url }}">Journal</a>
+    </li>
+    <li class="c-site-footer__nav-item">
+      <a href="{{ '/photos' | url }}">Photos</a>
+    </li>
+    <li class="c-site-footer__nav-item">
+      <a href="{{ '/podcasts' | url }}">Podcasts</a>
+    </li>
+    <li class="c-site-footer__nav-item">
+      <a href="{{ '/feeds' | url }}">RSS Feeds</a>
+    </li>
+    <li class="c-site-footer__nav-item">
+      <a href="{{ '/impressum' | url }}">Impressum</a>
+    </li>
+  </ul>
+</footer>
+
+<script src="/node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+{% endmacro %}
