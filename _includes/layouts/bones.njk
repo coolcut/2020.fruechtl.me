@@ -6,13 +6,25 @@
   <meta name="description" content="{{ renderData.description or description or metadata.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Short title here" />
+  {% if layout == "layouts/photo.njk" %}
+  <meta property="og:title" content="{{title}}" />
   <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
-  <meta name="twitter:title" content="Short title here">
+  <meta name="twitter:title" content="{{title}}">
   <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
+  {% else %}
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
+  {% endif %}
 
-  <meta property="og:image" content="{{ renderData.og_image or og_image or metadata.og_image }}" />
+  {% if layout == "layouts/photo.njk" %}
+  <meta property="og:image" content="{{ imageSource | imgixPhotoList }}" />
+  <meta name="twitter:image:src" content="{{ imageSource | imgixPhotoList }}">
+  {% else %}
+  <meta property="og:image" content="{{ layout }}" />
   <meta name="twitter:image:src" content="{{ renderData.og_image or og_image or metadata.og_image }}">
+  {% endif %}
 
   <style>{% include "css/main.css" %}</style>
   <link rel="stylesheet" href="{{ '/node_modules/lite-youtube-embed/src/lite-yt-embed.css' | url }}">
