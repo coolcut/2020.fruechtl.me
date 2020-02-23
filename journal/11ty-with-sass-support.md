@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: 11ty with Sass support
-date: 2019-12-08T10:00:00+01:00
+date: 2020-02-23T10:00:00+01:00
 media: []
 tags:
   - redesign
