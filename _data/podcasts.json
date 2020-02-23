@@ -54,10 +54,22 @@
     "htmlUrl": "https://www.eintracht-podcast.de/"
   },
   {
+    "title": "Exponent",
+    "image": "exponent.png",
+    "xmlUrl": "http://exponent.fm/feed/",
+    "htmlUrl": "http://exponent.fm/"
+  },
+  {
     "title": "Freak Show",
     "image": "freakshow.jpg",
     "xmlUrl": "https://feeds.metaebene.me/freakshow/m4a",
     "htmlUrl": "https://freakshow.fm/"
+  },
+  {
+    "title": "Full Stack Radio",
+    "image": "full-stack-radio.jpg",
+    "xmlUrl": "https://rss.simplecast.com/podcasts/279/rss",
+    "htmlUrl": "http://fullstackradio.com/"
   },
   {
     "title": "Hello Internet",
@@ -94,6 +106,18 @@
     "image": "presentable.png",
     "xmlUrl": "https://www.relay.fm/presentable/feed",
     "htmlUrl": "https://www.relay.fm/presentable"
+  },
+  {
+    "title": "Sprachnachrichten",
+    "image": "sprachnachrichten.png",
+    "xmlUrl": "https://sprachnachrichten.fm/feed/mp3/",
+    "htmlUrl": "https://sprachnachrichten.fm/"
+  },
+  {
+    "title": "The Test Drivers",
+    "image": "testdrivers.jpg",
+    "xmlUrl": "https://www.relay.fm/testdrivers/feed",
+    "htmlUrl": "https://www.relay.fm/testdrivers"
   },
   {
     "title": "WRINT: Wer redet ist nicht tot",
