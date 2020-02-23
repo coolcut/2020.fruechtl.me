@@ -12,8 +12,9 @@
 }
 
 .post-title {
-  margin: 0 0 $spacer-2;
+  margin: 0 0 $spacer-3;
   font-size: $type-scale-1;
+  line-height: $leading-9;
 }
 
 .post-title__link {
@@ -24,9 +25,10 @@
   text-decoration-color: $text-link-color;
 }
 
-time {
+.post-date {
   display: block;
   font-size: $type-scale-6;
+  line-height: $leading-5;
   color: $text-caption-color;
 }
 
@@ -45,7 +47,8 @@ time {
   }
 
   .post-title {
-    margin: 0 0 $spacer-2;
+    margin: 0 0 $spacer-1;
     font-size: $type-scale-2;
+    line-height: $leading-9;
   }
 }
