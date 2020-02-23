@@ -1,11 +1,11 @@
 .wrapper {
   margin: 0 auto;
-  max-width: 64ch;
+  max-width: $layout-wrapper-small;
 }
 
 .video {
   position: relative;
-  margin: 0 0 1.5rem;
+  margin: 0 0 $spacer-5;
   padding-bottom: 56.25%;
   height: 0;
   iframe {
@@ -19,10 +19,10 @@
 
 figure {
   margin: 0;
-  margin: 0 0 1.5rem;
+  margin: 0 0 $spacer-5;
 
   figcaption {
-    font-size: 0.875rem;
+    font-size: $type-scale-5;
     line-height: 1.25;
   }
 }

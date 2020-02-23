@@ -1,14 +1,14 @@
 /* ------------------------------------------------------------------
-||  Footer
+||  Site Footer
 ------------------------------------------------------------------- */
 .c-site-footer {
   margin: 0 auto;
-  padding: 72px 16px;
-  max-width: 96ch;
+  padding: $spacer-11 $spacer-4;
+  max-width: $layout-wrapper;
 }
 
 .c-site-footer--small {
-  max-width: 64ch;
+  max-width: $layout-wrapper-small;
 }
 
 .c-site-footer__nav {
@@ -19,8 +19,11 @@
 }
 
 .c-site-footer__nav-item {
-  margin-left: 16px;
-  font-size: 0.8rem;
+  margin-left: $spacer-4;
+  font-size: $type-scale-7;
+  @media (min-width: 960px) {
+    font-size: $type-scale-6;
+  }
 
   &:first-child {
     margin: 0;

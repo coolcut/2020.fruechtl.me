@@ -2,20 +2,18 @@
 ||  Typography
 ------------------------------------------------------------------- */
 :root {
-  font-size: 20px;
+  font-size: $type-scale-6;
 }
 
 body {
-  font-size: 1rem;
-  font-family: "Apercu Pro", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
-  font-feature-settings: "ss01" on, "ss02" on, "ss03" on, "zero" on;
-  line-height: 1.65;
+  font-size: $type-scale-5;
+  font-family: $font-family-body;
+  font-feature-settings: $font-settings-body;
+  line-height: $leading-normal;
 }
 
 p {
-  margin: 0 0 1.5rem;
+  margin: 0 0 $spacer-5;
 }
 
 a {
@@ -34,10 +32,10 @@ a {
 blockquote {
   position: relative;
   margin: 0;
-  padding: 0 1.5rem;
+  padding: 0 $spacer-5;
 
   p {
-    font-size: 1rem;
+    font-size: $type-scale-5;
     font-style: italic;
     color: $text-caption-color;
     z-index: 10;
@@ -47,24 +45,49 @@ blockquote {
     content: "“";
     position: absolute;
     display: block;
-    top: -1.5rem;
-    left: 0.75rem;
+    top: -#{$spacer-5};
+    left: $spacer-3;
     z-index: 0;
-    font-size: 8rem;
+    font-size: $type-scale-1 * 3;
     line-height: 1;
     opacity: 0.08;
   }
 }
 
+/* ------------------------------------------------------------------
+||  Headlines
+------------------------------------------------------------------- */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Value Serif Pro", serif;
-  font-feature-settings: "ss04" on, "ss05" on, "ss02" on, "ss07" on, "ss03" on,
-    "ss06" on, "ss08" on, "ss01" on, "ordn" on, "zero" on;
+  margin: 0 0 $spacer-5;
+  font-family: $font-family-headline;
+  font-feature-settings: $font-settings-headline;
   line-height: 1.25;
   color: $text-headline-color;
+}
+
+h1 {
+  font-size: $type-scale-1;
+}
+
+h2 {
+  font-size: $type-scale-3;
+}
+
+h3 {
+  margin: 0 0 $spacer-5;
+  font-size: $type-scale-4;
+}
+
+h4 {
+  margin: 0 0 $spacer-3;
+  font-size: $type-scale-6;
+  font-family: $font-family-body;
+  font-feature-settings: $font-settings-body;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

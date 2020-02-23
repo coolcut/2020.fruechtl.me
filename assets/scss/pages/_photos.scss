@@ -3,25 +3,25 @@
 ------------------------------------------------------------------- */
 .photos {
   margin: 0 auto;
-  max-width: 96ch;
+  max-width: $layout-wrapper;
 }
 
 .c-site-header--photos {
-  max-width: 96ch;
+  max-width: $layout-wrapper;
 }
 
 .photo-list {
   display: grid;
-  grid-gap: 16px;
+  grid-gap: $spacer-4;
   grid-template-columns: repeat(1, 1fr);
 
   @media (min-width: 480px) {
-    grid-gap: 8px;
+    grid-gap: $spacer-2;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: 960px) {
-    grid-gap: 24px;
+    grid-gap: $spacer-5;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -52,9 +52,9 @@
 .photo-list__date {
   position: absolute;
   display: none;
-  left: 16px;
-  bottom: 16px;
-  font-size: 0.8rem;
+  left: $spacer-4;
+  bottom: $spacer-4;
+  font-size: $type-scale-6;
   line-height: 1.25;
   color: white;
   z-index: 10;
@@ -72,10 +72,10 @@
 .photo-close {
   position: absolute;
   display: block;
-  top: 24px;
-  right: 24px;
-  width: 16px;
-  height: 16px;
+  top: $spacer-5;
+  right: $spacer-5;
+  width: $spacer-4;
+  height: $spacer-4;
   z-index: 1;
 
   svg {
@@ -119,5 +119,5 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 1.5rem;
+  padding: $spacer-5;
 }

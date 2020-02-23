@@ -4,16 +4,16 @@
 .journal-posts,
 .post {
   margin: 0 auto;
-  max-width: 64ch;
+  max-width: $layout-wrapper-small;
 }
 
 .post-header {
-  margin: 0 0 32px;
+  margin: 0 0 $spacer-6;
 }
 
 .post-title {
-  margin: 0 0 8px;
-  font-size: 2rem;
+  margin: 0 0 $spacer-2;
+  font-size: $type-scale-1;
 }
 
 .post-title__link {
@@ -26,18 +26,26 @@
 
 time {
   display: block;
-  font-size: 0.8rem;
+  font-size: $type-scale-6;
   color: $text-caption-color;
 }
 
+.post-content {
+  margin: 0 0 $spacer-8;
+}
+
+/* ------------------------------------------------------------------
+||  Journal - Preview
+------------------------------------------------------------------- */
 .post-preview {
-  margin: 0 0 32px;
+  margin: 0 0 $spacer-6;
 
   &:last-child {
     margin: 0;
   }
-}
 
-.post-content {
-  margin: 0 0 48px;
+  .post-title {
+    margin: 0 0 $spacer-2;
+    font-size: $type-scale-2;
+  }
 }
