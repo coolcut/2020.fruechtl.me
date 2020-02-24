@@ -1,7 +1,10 @@
 ---
-layout: layouts/base.njk
+layout: layouts/bones.njk
 ---
 
 <div class="wrapper">
-  {{ content | safe }}
+  <main>{{ content | safe }}</main>
 </div>
+
+{% import "components/site-footer.njk" as site %}
+{{ site.footer('c-site-footer c-site-footer--small') }}
