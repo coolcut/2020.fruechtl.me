@@ -1,16 +1,16 @@
 ---
 layout: layouts/post.njk
 title: 11ty with Sass support
-date: 2020-02-23T10:00:00+01:00
+date: 2020-02-25T20:30:00
 media: []
 tags:
   - redesign
   - 11ty
 ---
 
-[11ty](https://www.11ty.dev) is incredible in what it does, generating static sites, but it doesn't offer any asset handling by default. This is not a problem per se, but it requires me to add some additional tooling to help with things like [Sass](https://sass-lang.com) and maybe some JavaScript in the future.
+[11ty](https://www.11ty.dev) is incredible in what it does, generating static sites, but it doesn't offer asset handling by default. This is not a problem per se, but it requires me to add some tooling to help with things like [Sass](https://sass-lang.com) and maybe some JavaScript in the future.
 
-To solve this for me, I immediately chose [Gulp](https://gulpjs.com) to help me. For the past couple of years, this is my go-to solution when it comes to simple build-tasks for my frontend development work.
+To solve this, I immediately chose [Gulp](https://gulpjs.com) to help me. For the past couple of years, this is my go-to solution when it comes to simple build-tasks for my frontend development work.
 
 Currently, my Gulpfile is very simple and looks like this:
 
@@ -37,7 +37,7 @@ gulp.task("watch", function() {
 gulp.task("build", gulp.parallel("css"));
 ```
 
-As you can see, this Gulpfile only focuses on the Sass files and isn't doing anything crazy here.
+As you can see, this Gulpfile only focuses on the Sass files and isn't doing anything crazy.
 
 To get this to work with the default 11ty scripts I chained some npm tasks together like so:
 
@@ -55,7 +55,7 @@ With the help of these npm scripts, I can now quickly start my development proce
 
 At first, I struggled a bit with this setup, because 11ty didn't pick up the changes of the freshly generated `.css` files after I saved a `.scss` file. After some digging, I found the problem. Because I've added the generated `.css` files to my `.gitignore` and 11ty is using the `.gitignore` itself to ignore all referenced directories and files, the changes weren't showing up.
 
-Thankfully, 11ty has a fix for this. I just added an option to the `.eleventy.js` file like so:
+Thankfully, 11ty has a fix for this. I've added an option to the `.eleventy.js` file like so:
 
 ```js
 module.exports = function(eleventyConfig) {
