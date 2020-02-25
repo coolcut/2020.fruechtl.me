@@ -29,6 +29,11 @@ module.exports = function(eleventyConfig) {
     return moment.utc(dateObj).format("YYYY-MM-DD");
   });
 
+  eleventyConfig.addFilter('simpleURL', (url) => {
+    var url = new URL(url);
+    return url.hostname.replace("www","");
+  });
+
   eleventyConfig.addFilter('photoList', (image) => {
     const UPLOAD_URL = "/uploads/photos/"
 
