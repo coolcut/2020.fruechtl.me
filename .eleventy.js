@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter('photoList', (image) => {
-    const UPLOAD_URL = "/uploads/"
+    const UPLOAD_URL = "/uploads/photos/"
 
     const i = image.lastIndexOf('.');
     const IMAGE_NAME = image.substring(0, i);
@@ -40,7 +40,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter('photoSingle', (image) => {
-    const UPLOAD_URL = "/uploads/"
+    const UPLOAD_URL = "/uploads/photos/"
 
     const i = image.lastIndexOf('.');
     const IMAGE_NAME = image.substring(0, i);
@@ -50,7 +50,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter('photoSingleSourceSet', (image) => {
-    const UPLOAD_URL = "/uploads/"
+    const UPLOAD_URL = "/uploads/photos/"
 
     const i = image.lastIndexOf('.');
     const IMAGE_NAME = image.substring(0, i);

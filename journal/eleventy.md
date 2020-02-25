@@ -14,6 +14,6 @@ Is it essential to use such a massive tool like [Gridsome](https://gridsome.org)
 
 I don't think so. I want to have a lightweight, fast, and very dull foundation for this website. Because of that, I basically removed everything from the Gridsome side and replaced it with some [11ty](https://www.11ty.io) love. Everything is entirely static and crazy fast now. Just look at these two screenshots I took to compare Gridsome and 11ty from the Firefox Network Tab. 🔥 🚀
 
-![](https://res.cloudinary.com/dy3alb7gv/image/upload/v1574111577/Gridsome_v1bfec.jpg)
+![](/uploads/journal/gridsome.jpg)
 
-![](https://res.cloudinary.com/dy3alb7gv/image/upload/v1574111578/11ty_bh5j1g.jpg)
+![](/uploads/journal/11ty.jpg)
