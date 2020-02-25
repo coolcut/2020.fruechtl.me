@@ -12,7 +12,7 @@ layout: layouts/home.njk
   {% for podcast in podcasts %}
   <li class="podcast-item">
     <div class="podcast-item__cover">
-      <img src="{{ podcast.image | imgixPodcastCover }}" alt="">
+      <img src="{{ podcast.image | podcastCover }}" alt="">
     </div>
     <div class="podcast-item__content">
       <h2 class="podcast-item__title">{{podcast.title}}</h2>

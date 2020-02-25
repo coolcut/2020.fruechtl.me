@@ -23,8 +23,8 @@
   {% endif %}
 
   {% if layout == "layouts/photo.njk" %}
-  <meta property="og:image" content="{{ imageSource | imgixPhotoList }}" />
-  <meta name="twitter:image:src" content="{{ imageSource | imgixPhotoList }}">
+  <meta property="og:image" content="{{ imageSource | photoList }}" />
+  <meta name="twitter:image:src" content="{{ imageSource | photoList }}">
   {% else %}
   <meta property="og:image" content="{{ layout }}" />
   <meta name="twitter:image:src" content="{{ renderData.og_image or og_image or metadata.og_image }}">

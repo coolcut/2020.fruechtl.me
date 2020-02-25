@@ -29,7 +29,7 @@ module.exports = function(eleventyConfig) {
     return moment.utc(dateObj).format("YYYY-MM-DD");
   });
 
-  eleventyConfig.addFilter('imgixPhotoList', (image) => {
+  eleventyConfig.addFilter('photoList', (image) => {
     const UPLOAD_URL = "/uploads/"
 
     const i = image.lastIndexOf('.');
@@ -39,11 +39,17 @@ module.exports = function(eleventyConfig) {
     return `${UPLOAD_URL}${IMAGE_NAME}-cover.${IMAGE_EXT}`
   });
 
-  eleventyConfig.addFilter('imgixPhotoSingle', (imageName) => {
-    return `https://coolcut.imgix.net/${imageName}?ixlib=rb-1.2.1&w=1500&q=85&fm=jpg&auto=format`
+  eleventyConfig.addFilter('photoSingle', (image) => {
+    const UPLOAD_URL = "/uploads/"
+
+    const i = image.lastIndexOf('.');
+    const IMAGE_NAME = image.substring(0, i);
+    const IMAGE_EXT = image.substring(i + 1);
+
+    return `${UPLOAD_URL}${IMAGE_NAME}.${IMAGE_EXT}`
   });
 
-  eleventyConfig.addFilter('imgixPhotoSingleSourceSet', (image) => {
+  eleventyConfig.addFilter('photoSingleSourceSet', (image) => {
     const UPLOAD_URL = "/uploads/"
 
     const i = image.lastIndexOf('.');
@@ -53,8 +59,14 @@ module.exports = function(eleventyConfig) {
     return `${UPLOAD_URL}${IMAGE_NAME}-500px.${IMAGE_EXT} 500w, ${UPLOAD_URL}${IMAGE_NAME}-800px.${IMAGE_EXT} 800w, ${UPLOAD_URL}${IMAGE_NAME}-1200px.${IMAGE_EXT} 1200w, ${UPLOAD_URL}${IMAGE_NAME}.${IMAGE_EXT} 1500w, ${UPLOAD_URL}${IMAGE_NAME}-2000px.${IMAGE_EXT} 2000w`
   });
 
-  eleventyConfig.addFilter('imgixPodcastCover', (imageName) => {
-    return `https://coolcut.imgix.net/podcasts/${imageName}?ixlib=rb-1.2.1&h=288&q=85&fm=jpg&auto=format`
+  eleventyConfig.addFilter('podcastCover', (image) => {
+    const UPLOAD_URL = "/uploads/podcasts/"
+
+    const i = image.lastIndexOf('.');
+    const IMAGE_NAME = image.substring(0, i);
+    const IMAGE_EXT = image.substring(i + 1);
+
+    return `${UPLOAD_URL}${IMAGE_NAME}-500px.${IMAGE_EXT}`
   });
 
   eleventyConfig.addNunjucksShortcode("youtube", function(youTubeId) {

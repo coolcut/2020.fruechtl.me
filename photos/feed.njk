@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
 		<content type="html">
 		<![CDATA[
 			<figure class="photo-frame">
-				<img class="photo-frame__image" src="{{ photo.data.imageSource | imgixPhotoSingle }}" alt="{{ photo.data.imageAlt }}">
+				<img class="photo-frame__image" src="{{ photo.data.imageSource | photoSingle }}" alt="{{ photo.data.imageAlt }}">
 				<figcaption class="photo-single__item-caption">{{ photo.data.title }}</figcaption>
 			</figure>
 		]]>
