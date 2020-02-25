@@ -11,12 +11,11 @@ module.exports = async function () {
   console.log('>>> Reading from cache...');
 	let cache = readFromCache();
 
-	console.log(cache)
-	console.log("Test")
-
   if (cache.length) {
 		console.log(`>>> ${cache.length} favorites loaded from cache`);
-  }
+	}
+
+	console.log(process.env.NODE_ENV)
 
   if (process.env.NODE_ENV === 'production') {
     console.log('>>> Checking for new favorites...');
