@@ -6,3 +6,5 @@ package-lock.json
 /fonts
 /_includes/css
 /uploads
+/.env
+_cache

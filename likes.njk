@@ -1,0 +1,19 @@
+---
+layout: layouts/home.njk
+---
+
+<div class="wrapper">
+  <header class="c-site-header c-site-header--photos">
+    <h1 class="site-title">Podcasts</h1>
+    <p class="site-slogan">These are all my podcast subscriptions. I listen to them in my favorite podcast app <a href="https://overcast.fm">Overcast</a>.</p>
+  </header>
+
+  <ul class="likes">
+  {% for like in likes %}
+    <li class="likes__item">
+      <h3><a href="{{like.href}}">{{like.description}}</a></h3>
+      <time datetime="{{ like.time | htmlDateString }}">{{ like.time | readableDate}}</time>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
