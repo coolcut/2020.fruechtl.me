@@ -48,6 +48,7 @@ gulp.task('images', function () {
 
 gulp.task("watch", function() {
   gulp.watch('./assets/scss/**/*.scss', gulp.parallel('css'));
+  gulp.watch('./assets/uploads/**/*.{png,jpg}', gulp.parallel('images'));
 });
 
-gulp.task('build', gulp.parallel('css'));
+gulp.task('build', gulp.parallel('css', 'images'));
