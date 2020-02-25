@@ -9,13 +9,16 @@ const CACHE_FILE_PATH = '_cache/likes.json';
 
 module.exports = async function () {
   console.log('>>> Reading from cache...');
-  let cache = readFromCache();
+	let cache = readFromCache();
+
+	console.log(cache)
+	console.log("Test")
 
   if (cache.length) {
 		console.log(`>>> ${cache.length} favorites loaded from cache`);
   }
 
-  // if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production') {
     console.log('>>> Checking for new favorites...');
 
     let data = await fetchPinboard();
@@ -25,10 +28,9 @@ module.exports = async function () {
       writeToCache(data);
       cache = data;
       return data;
-    }
-
-    return cache;
-	// }
+		}
+	}
+	return cache;
 }
 
 
