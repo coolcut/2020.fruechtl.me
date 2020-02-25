@@ -51,4 +51,5 @@ gulp.task("watch", function() {
   gulp.watch('./assets/uploads/**/*.{png,jpg}', gulp.parallel('images'));
 });
 
+gulp.task('dev', gulp.parallel('css'));
 gulp.task('build', gulp.parallel('css', 'images'));
