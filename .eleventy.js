@@ -31,7 +31,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter('simpleURL', (url) => {
     var url = new URL(url);
-    return url.hostname.replace("www","");
+    return url.hostname.replace("www.","");
   });
 
   eleventyConfig.addFilter('photoList', (image) => {
