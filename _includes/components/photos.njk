@@ -3,7 +3,7 @@
   {% for photo in photos %}
     <a id="{{ photo.data.imageId }}" class="photo-list__link" href="{{ photo.url | url }}">
       <figure class="photo">
-        <img src="{{ photo.data.imageSource | photoList }}" alt="photo.data.description">
+        <img src="{{ photo.data.imageSource | photoList }}" width="1000" height="1000" alt="{{photo.data.imageAlt}}">
       </figure>
       <time class="photo-list__date" datetime="{{ photo.date | htmlDateString }}">{{ photo.date | readableDate}}</time>
     </a>
