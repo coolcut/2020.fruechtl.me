@@ -2,7 +2,6 @@
 layout: layouts/post.njk
 title: Content Source
 date: 2019-11-07T09:00:00
-media: []
 tags:
   - redesign
 ---

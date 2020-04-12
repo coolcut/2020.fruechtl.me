@@ -2,7 +2,6 @@
 layout: layouts/post.njk
 title: Hi there!
 date: 2019-11-05T11:00:00
-media: []
 tags:
   - redesign
 ---

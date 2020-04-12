@@ -2,7 +2,6 @@
 layout: layouts/post.njk
 title: Syntax Highlighting
 date: 2019-12-08T08:30:00
-media: []
 tags:
   - redesign
   - 11ty
@@ -15,7 +14,7 @@ As an example of how this new syntax highlighting looks for now, here you can se
 ```js
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 };
 ```

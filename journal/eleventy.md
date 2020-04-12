@@ -2,7 +2,6 @@
 layout: layouts/post.njk
 title: Eleventy
 date: 2019-11-18T21:00:00
-media: []
 tags:
   - redesign
   - 11ty

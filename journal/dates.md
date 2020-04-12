@@ -2,7 +2,6 @@
 layout: layouts/post.njk
 title: Dates
 date: 2019-11-07T11:00:00
-media: []
 tags:
   - redesign
 ---

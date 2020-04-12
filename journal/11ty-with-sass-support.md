@@ -2,7 +2,6 @@
 layout: layouts/post.njk
 title: 11ty with Sass support
 date: 2020-02-25T20:30:00
-media: []
 tags:
   - redesign
   - 11ty
@@ -20,7 +19,7 @@ const sass = require("gulp-sass");
 const cssnano = require("gulp-cssnano");
 const autoprefixer = require("gulp-autoprefixer");
 
-gulp.task("css", function() {
+gulp.task("css", function () {
   return gulp
     .src("./assets/scss/main.scss")
     .pipe(sass())
@@ -30,7 +29,7 @@ gulp.task("css", function() {
     .pipe(gulp.dest("./_includes/css"));
 });
 
-gulp.task("watch", function() {
+gulp.task("watch", function () {
   gulp.watch("./assets/scss/**/*.scss", gulp.parallel("css"));
 });
 
@@ -58,7 +57,7 @@ At first, I struggled a bit with this setup, because 11ty didn't pick up the cha
 Thankfully, 11ty has a fix for this. I've added an option to the `.eleventy.js` file like so:
 
 ```js
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 };
 ```
