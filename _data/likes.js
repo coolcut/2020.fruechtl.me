@@ -40,11 +40,10 @@ async function fetchPinboard() {
 	}
 
 	let url = `https://${USERNAME}:${PASSWORD}@api.pinboard.in/v1/posts/all?format=json&tag=like`;
-
 	const response = await fetch(url);
-  if (response.status === 200) {
+
+	if (response.status === 200) {
     const feed = await response.json();
-    console.log(feed)
 		return feed;
 	}
 
