@@ -2,16 +2,17 @@
 ||  Site Footer
 ------------------------------------------------------------------- */
 .c-site-footer {
+  display: grid;
+  grid-gap: 48px;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-areas: "left content right";
   margin: 0 auto;
-  padding: $spacer-11 0;
-  max-width: $layout-wrapper;
-}
-
-.c-site-footer--small {
-  max-width: $layout-wrapper-small;
+  padding: 0 16px 48px;
+  max-width: 1192px;
 }
 
 .c-site-footer__nav {
+  grid-area: content;
   display: inline-flex;
   margin: 0;
   padding: 0;

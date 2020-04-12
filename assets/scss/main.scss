@@ -12,37 +12,9 @@
 
 @import "base/base";
 
+@import "pages/base";
 @import "pages/journal";
 @import "pages/podcasts";
 @import "pages/likes";
 
 @import "shame";
-
-body {
-  margin: 0;
-  color: $text-color;
-}
-
-main {
-  padding: 48px 16px 0;
-
-  @media (min-width: 960px) {
-    padding: 72px 0 0;
-  }
-}
-
-.wave-svg {
-  padding: 0 0 24px;
-  width: 100%;
-  height: auto;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 64ch;
-}

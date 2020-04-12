@@ -1,11 +1,7 @@
-{% macro footer(class) %}
-<footer class="{{ class | escape }}">
+<footer class="c-site-footer">
   <ul class="c-site-footer__nav">
     <li class="c-site-footer__nav-item">
       <a href="{{ '/' | url }}">Journal</a>
-    </li>
-    <li class="c-site-footer__nav-item">
-      <a href="{{ '/likes' | url }}">Likes</a>
     </li>
     <li class="c-site-footer__nav-item">
       <a href="https://photos.fruechtl.me">Photos</a>
@@ -23,4 +19,3 @@
 </footer>
 
 <script src="/node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
-{% endmacro %}

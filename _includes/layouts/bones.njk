@@ -35,7 +35,8 @@
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for 2020.fruechtl.me" href="{{ '/feed.xml' | url }}" />
 </head>
 <body>
-  <div class="c-redesign-notice">This site currently gets redesigned in the open → <a href="/journal/hi-there/">Learn more</a></div>
+  {% include "components/site-header.njk" %}
   {{ content | safe }}
+  {% include "components/site-footer.njk" %}
 </body>
 </html>

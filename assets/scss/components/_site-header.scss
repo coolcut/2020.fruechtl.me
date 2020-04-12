@@ -1,18 +1,46 @@
 /* ------------------------------------------------------------------
 ||  SIte Header
 ------------------------------------------------------------------- */
-.c-site-header {
-  margin: 0 auto;
-  padding: 0 0 $spacer-5;
-  max-width: $layout-wrapper-small;
+.site-header {
+  display: grid;
+  grid-gap: 48px;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-areas: "title navigation info";
+  margin: 0 auto 96px;
+  padding: 48px 16px 0;
+  max-width: 1192px;
+  align-items: center;
 }
 
 .site-title {
-  margin: 0 0 $spacer-3;
-  font-feature-settings: "sinf" on, "ss03" on, "ss04" on;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 125%;
 }
 
-.site-slogan {
-  max-width: $layout-wrapper-tiny;
-  font-size: $type-scale-6;
+.site-title__link {
+  color: #0d0e12;
+  text-decoration: none;
+}
+
+.site-navigation-list {
+  display: flex;
+  margin: 0;
+}
+
+.site-navigation-item {
+  margin-left: 48px;
+
+  &:first-child {
+    margin: 0;
+  }
+}
+
+.site-navigation-item__link,
+.site-more-information__link {
+  font-size: 20px;
+  line-height: 125%;
+  color: #6c7689;
+  text-decoration: none;
 }

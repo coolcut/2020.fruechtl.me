@@ -3,8 +3,7 @@
 ------------------------------------------------------------------- */
 .journal-posts,
 .post {
-  margin: 0 auto;
-  max-width: $layout-wrapper-small;
+  grid-area: content;
 }
 
 .post-header {

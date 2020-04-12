@@ -6,10 +6,12 @@
 }
 
 body {
+  margin: 0;
   font-size: $type-scale-5;
   font-family: $font-family-body;
   font-feature-settings: $font-settings-body;
   line-height: $leading-normal;
+  color: $text-color;
 }
 
 p {
@@ -52,6 +54,11 @@ blockquote {
     line-height: 1;
     opacity: 0.08;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ------------------------------------------------------------------

@@ -2,18 +2,13 @@
 layout: layouts/home.njk
 ---
 
-<div class="wrapper">
-  <header class="c-site-header c-site-header--photos">
-    <h1 class="site-title">Likes</h1>
-    <p class="site-slogan">This list contains things I liked that you might find of interest, too. Enjoy.</p>
-  </header>
+<h2 class="">Likes</h2>
 
-  <ul class="likes-list">
-  {% for like in likes %}
-    <li class="likes__item">
-      <h3 class="likes__title"><a href="{{ like.href }}">{{ like.description }}</a></h3>
-      <span class="likes__date">{{ like.href | simpleURL }}</span>
-    </li>
-  {% endfor %}
-  </ul>
-</div>
+<ul class="likes-list">
+{% for like in likes %}
+  <li class="likes__item">
+    <h3 class="likes__title"><a href="{{ like.href }}">{{ like.description }}</a></h3>
+    <span class="likes__date">{{ like.href | simpleURL }}</span>
+  </li>
+{% endfor %}
+</ul>
