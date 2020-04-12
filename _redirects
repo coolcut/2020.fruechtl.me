@@ -1,1 +1,2 @@
 /posts/*  /journal/:splat
+/photos/*  https://photos.fruechtl.me/:splat

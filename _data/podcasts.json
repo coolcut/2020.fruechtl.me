@@ -30,6 +30,18 @@
     "htmlUrl": "http://spec.fm/podcasts/design-details"
   },
   {
+    "title": "Design Systems Podcast",
+    "image": "dsp.jpg",
+    "xmlUrl": "https://feeds.buzzsprout.com/887923.rss",
+    "htmlUrl": "https://basalt.io/ds-podcast"
+  },
+  {
+    "title": "Das Coronavirus-Update mit Christian Drosten",
+    "image": "coronavirus-update.jpg",
+    "xmlUrl": "https://www.ndr.de/nachrichten/info/podcast4684.xml",
+    "htmlUrl": "https://www.ndr.de/nachrichten/info/podcast4684.html"
+  },
+  {
     "title": "Die neuen Zwanziger",
     "image": "dnz.jpg",
     "xmlUrl": "https://neuezwanziger.de/podcast/feed/mp3/",
@@ -48,46 +60,16 @@
     "htmlUrl": "https://drei90.de/"
   },
   {
-    "title": "Eintracht Frankfurt Podcast",
-    "image": "eintracht-podcast.jpg",
-    "xmlUrl": "https://www.eintracht-podcast.de/feed/podcast",
-    "htmlUrl": "https://www.eintracht-podcast.de/"
-  },
-  {
-    "title": "Exponent",
-    "image": "exponent.png",
-    "xmlUrl": "http://exponent.fm/feed/",
-    "htmlUrl": "http://exponent.fm/"
-  },
-  {
     "title": "Freak Show",
     "image": "freakshow.jpg",
     "xmlUrl": "https://feeds.metaebene.me/freakshow/m4a",
     "htmlUrl": "https://freakshow.fm/"
   },
   {
-    "title": "Full Stack Radio",
-    "image": "full-stack-radio.jpg",
-    "xmlUrl": "https://rss.simplecast.com/podcasts/279/rss",
-    "htmlUrl": "http://fullstackradio.com/"
-  },
-  {
-    "title": "Hello Internet",
-    "image": "hello-internet.png",
-    "xmlUrl": "http://www.hellointernet.fm/podcast?format=rss",
-    "htmlUrl": "http://www.hellointernet.fm/"
-  },
-  {
     "title": "Lage der Nation",
     "image": "ldn.png",
     "xmlUrl": "https://www.kuechenstud.io/plus/lagedernation-plus-mp3/?member=e7716400002e1f67d165891d135374",
     "htmlUrl": "https://www.kuechenstud.io/plus"
-  },
-  {
-    "title": "Launched",
-    "image": "launched.jpg",
-    "xmlUrl": "https://feeds.fireside.fm/launched/rss",
-    "htmlUrl": "https://launchedfm.com/"
   },
   {
     "title": "Layout",
@@ -114,22 +96,16 @@
     "htmlUrl": "https://sprachnachrichten.fm/"
   },
   {
-    "title": "The Test Drivers",
-    "image": "testdrivers.jpg",
-    "xmlUrl": "https://www.relay.fm/testdrivers/feed",
-    "htmlUrl": "https://www.relay.fm/testdrivers"
+    "title": "UKW",
+    "image": "ukw.jpg",
+    "xmlUrl": "https://ukw.fm/feed/mp3/",
+    "htmlUrl": "https://ukw.fm/"
   },
   {
     "title": "WRINT: Wer redet ist nicht tot",
     "image": "wrint.jpg",
     "xmlUrl": "https://www.wrint.de/feed/podcast/",
     "htmlUrl": "http://www.wrint.de/kommt-reden-wir-zusammen/"
-  },
-  {
-    "title": "Wett-Brötchen",
-    "image": "wett-broetchen.jpg",
-    "xmlUrl": "https://www.wett-broetchen.de/feed/mp3/",
-    "htmlUrl": "https://www.wett-broetchen.de/"
   },
   {
     "title": "Wir. Müssen Reden",

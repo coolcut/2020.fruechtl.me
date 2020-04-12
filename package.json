@@ -29,7 +29,7 @@
     "gulp-sass": "^4.0.2",
     "lite-youtube-embed": "^0.0.0",
     "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.5",
+    "markdown-it-anchor": "^5.2.7",
     "moment": "^2.24.0",
     "node-fetch": "^2.6.0"
   }
