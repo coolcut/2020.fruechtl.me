@@ -3,27 +3,41 @@
 ------------------------------------------------------------------- */
 .grid {
   display: grid;
-  grid-gap: 48px;
+  grid-gap: 24px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 1312px;
+
+  @media (min-width: 960px) {
+    grid-gap: 48px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 .grid--basic {
-  grid-template-columns: 2fr 8fr 2fr;
-  grid-template-areas: "leading main trailing";
+  grid-template-columns: 1fr;
 
-  .grid__trailing-element {
-    grid-area: leading;
+  @media (min-width: 640px) {
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-areas: "leading main trailing";
+
+    .grid__trailing-element {
+      grid-area: leading;
+    }
+
+    .grid__content-element {
+      grid-area: main;
+    }
+
+    .grid__content-element--full {
+      grid-column: 2 / span 2;
+    }
   }
 
-  .grid__content-element {
-    grid-area: main;
-  }
-
-  .grid__content-element--full {
-    grid-column: 2 / span 2;
+  @media (min-width: 960px) {
+    grid-template-columns: 2fr 8fr 2fr;
   }
 }

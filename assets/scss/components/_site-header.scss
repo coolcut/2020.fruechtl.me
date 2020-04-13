@@ -2,23 +2,42 @@
 ||  SIte Header
 ------------------------------------------------------------------- */
 .site-header {
-  grid-template-columns: 2fr 8fr 2fr;
-  grid-template-areas: "title navigation info";
-  margin-bottom: 96px;
-  padding-top: 48px;
+  grid-template-columns: 1fr;
+  margin-bottom: 48px;
+  padding-top: 24px;
   align-items: center;
+
+  @media (min-width: 960px) {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas: "title navigation info";
+    margin-bottom: 96px;
+    padding-top: 48px;
+  }
 }
 
 .site-title {
+  grid-row: 1;
   margin: 0;
-  font-size: 20px;
+  font-size: $type-scale-5;
   font-weight: bold;
-  line-height: 125%;
+  line-height: $leading-tight;
+
+  @media (min-width: 960px) {
+    font-size: $type-scale-4;
+  }
 }
 
 .site-title__link {
   color: #0d0e12;
   text-decoration: none;
+}
+
+.site-navigation {
+  grid-row: 2;
+
+  @media (min-width: 960px) {
+    grid-row: 1;
+  }
 }
 
 .site-navigation-list {
@@ -27,15 +46,31 @@
 }
 
 .site-navigation-item {
-  margin-left: 48px;
+  margin-left: 24px;
+
+  @media (min-width: 960px) {
+    margin-left: 48px;
+  }
 
   &:first-child {
     margin: 0;
   }
 }
 
+.site-navigation-item--hide-desktop {
+  display: block;
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
 .site-more-information {
+  display: none;
   text-align: right;
+
+  @media (min-width: 960px) {
+    display: block;
+  }
 }
 
 .site-navigation-item__link,

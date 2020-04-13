@@ -4,11 +4,15 @@
 .podcast-list {
   grid-area: content;
   display: grid;
-  grid-gap: 48px;
+  grid-gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: 960px) {
+    grid-gap: 48px;
+  }
 }
 
 .podcast-item__cover {
