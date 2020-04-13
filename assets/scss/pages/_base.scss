@@ -1,12 +1,29 @@
 /* ------------------------------------------------------------------
 ||  Base
 ------------------------------------------------------------------- */
-.site-content {
+.grid {
   display: grid;
   grid-gap: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1312px;
+}
+
+.grid--basic {
   grid-template-columns: 2fr 8fr 2fr;
-  grid-template-areas: "left content right";
-  margin: 0 auto 96px;
-  padding: 0 16px;
-  max-width: 1192px;
+  grid-template-areas: "leading main trailing";
+
+  .grid__trailing-element {
+    grid-area: leading;
+  }
+
+  .grid__content-element {
+    grid-area: main;
+  }
+
+  .grid__content-element--full {
+    grid-column: 2 / span 2;
+  }
 }

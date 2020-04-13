@@ -1,32 +1,32 @@
 ---
-layout: layouts/home.njk
+layout: layouts/base.njk
 ---
 
-<div class="wrapper">
-  <header class="c-site-header c-site-header--photos">
-    <h1 class="site-title">Podcasts</h1>
-    <p class="site-slogan">These are all my podcast subscriptions. I listen to them in my favorite podcast app <a href="https://overcast.fm">Overcast</a>.</p>
-  </header>
-
-  <ul class="podcast-list">
-  {% for podcast in podcasts %}
-  <li class="podcast-item">
-    <div class="podcast-item__cover">
-      <img src="{{ podcast.image | podcastCover }}" alt="">
-    </div>
-    <div class="podcast-item__content">
-      <h2 class="podcast-item__title">{{podcast.title}}</h2>
-      <div class="podcast-item__meta">
-        <span class="podcast-list__meta-item">
-          <a href="{{podcast.htmlUrl}}">Website</a>
-        </span>
-        <span class="podcast-item__meta-item"> • </span>
-        <span class="podcast-item__meta-item">
-          <a href="{{podcast.xmlUrl}}">Feed</a>
-        </span>
-      </div>
-    </div>
-  </li>
-  {% endfor %}
-  </ul>
-</div>
+<main class="grid grid--basic">
+  <aside class="grid__trailing-element">
+    <h2>Podcasts</h2>
+  </aside>
+  <section class="grid__content-element--full">
+    <ul class="podcast-list">
+    {% for podcast in podcasts %}
+      <li class="podcast-item">
+        <div class="podcast-item__cover">
+          <img src="{{ podcast.image | podcastCover }}" alt="">
+        </div>
+        <div class="podcast-item__content">
+          <h2 class="podcast-item__title">{{podcast.title}}</h2>
+          <div class="podcast-item__meta">
+            <span class="podcast-list__meta-item">
+              <a href="{{podcast.htmlUrl}}">Website</a>
+            </span>
+            <span class="podcast-item__meta-item"> • </span>
+            <span class="podcast-item__meta-item">
+              <a href="{{podcast.xmlUrl}}">Feed</a>
+            </span>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+</main>

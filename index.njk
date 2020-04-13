@@ -2,5 +2,9 @@
 layout: layouts/home.njk
 ---
 
-{% set posts = collections.posts | reverse %}
-{% include "components/posts.njk" %}
+<main class="grid grid--basic">
+  <section class="grid__content-element">
+    {% set posts = collections.posts | reverse %}
+    {% include "components/posts.njk" %}
+  </section>
+</main>
