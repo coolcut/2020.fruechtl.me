@@ -63,6 +63,17 @@ img {
   height: auto;
 }
 
+code,
+kbd,
+samp {
+  padding: $spacer-1 $spacer-2;
+  font-size: $type-scale-6;
+  font-weight: bold;
+  background: $brand-color-cloud;
+  border-radius: 4px;
+  color: $brand-color;
+}
+
 /* ------------------------------------------------------------------
 ||  Headlines
 ------------------------------------------------------------------- */
