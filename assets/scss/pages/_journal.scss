@@ -52,7 +52,17 @@
 
   .post-title {
     margin: 0 0 $spacer-1;
-    font-size: $type-scale-2;
-    line-height: $leading-9;
+    font-size: $type-scale-3;
+    line-height: $leading-7;
+
+    @media (min-width: 640px) {
+      font-size: $type-scale-2;
+      line-height: $leading-8;
+    }
+
+    @media (min-width: 960px) {
+      font-size: $type-scale-1;
+      line-height: $leading-9;
+    }
   }
 }

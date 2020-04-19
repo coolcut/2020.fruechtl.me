@@ -2,29 +2,35 @@
 ||  Site Footer
 ------------------------------------------------------------------- */
 .c-site-footer {
-  grid-template-columns: 2fr 8fr 2fr;
-  grid-template-areas: "left content right";
-  padding-top: 96px;
-  padding-bottom: 48px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+
+  @media (min-width: 960px) {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas: "left content right";
+    padding-top: 96px;
+    padding-bottom: 48px;
+  }
 }
 
 .c-site-footer__nav {
-  grid-area: content;
-  display: inline-flex;
   margin: 0;
+  margin-left: -4px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: 960px) {
+    grid-area: content;
+    display: inline-flex;
+  }
 }
 
 .c-site-footer__nav-item {
-  margin-left: $spacer-4;
+  display: inline-block;
+  padding: 0 4px;
   font-size: $type-scale-7;
   @media (min-width: 960px) {
     font-size: $type-scale-6;
-  }
-
-  &:first-child {
-    margin: 0;
   }
 
   a {
