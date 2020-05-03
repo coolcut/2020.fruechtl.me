@@ -4,18 +4,10 @@
   "description": "Product designer focused on design systems at BRYTER. I’m documenting my process in redefining my site.",
   "feed": {
     "title": "Journal - Jan Früchtl",
-    "subtitle": "This is a subtitle",
+    "subtitle": "Writing about all kind of things in the area of design, design systems and frontend development.",
     "filename": "feed.xml",
     "path": "/feed.xml",
     "url": "https://fruechtl.me/feed.xml",
-    "id": "https://fruechtl.me/"
-  },
-  "photoFeed": {
-    "title": "Photos - Jan Früchtl",
-    "subtitle": "This is a subtitle",
-    "filename": "feed.xml",
-    "path": "/photos/feed.xml",
-    "url": "https://fruechtl.me/photos/feed.xml",
     "id": "https://fruechtl.me/"
   },
   "author": {

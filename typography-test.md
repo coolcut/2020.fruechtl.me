@@ -1,5 +1,6 @@
 ---
 layout: layouts/page.njk
+metatitle: Typography Test
 ---
 
 # HTML Ipsum Presents
