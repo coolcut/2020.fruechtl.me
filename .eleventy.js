@@ -2,12 +2,14 @@ const moment = require("moment");
 const fs = require("fs");
 const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRSS);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setDataDeepMerge(true);
