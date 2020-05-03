@@ -18,6 +18,12 @@ pre {
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
+
+  code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+      monospace;
+    background: none;
+  }
 }
 
 code {
