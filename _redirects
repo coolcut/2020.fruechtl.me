@@ -1,2 +1,7 @@
 /posts/*  /journal/:splat
 /photos/*  https://photos.fruechtl.me/:splat
+
+[[redirects]]
+  from = "/*"
+  to = "/404"
+  status = 404
