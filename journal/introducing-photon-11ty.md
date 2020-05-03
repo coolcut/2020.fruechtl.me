@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Introducing Photon 11ty
-date: 2020-05-01T16:30:00
+date: 2020-05-03T13:00:00
 media: []
 tags:
   - 11ty
@@ -67,10 +67,12 @@ I have some ideas floating around in my head, but I haven't decided yet if these
 Besides that, I want to make smaller improvements regarding performance and maybe automate some more things.
 
 ## Anything else
-As I said earlier, I'm happy with the outcome so far. I'm totally aware that this solution is primarily focused on people with a bit of technical knowledge. 
+As I said earlier, I'm happy with the outcome so far. I'm totally aware that this solution is primarily focused on people with a bit of technical knowledge.
 
 I think this is okay for the start, but there should also be something that everybody can use. Something that is build with the privacy, data ownership and the foundation of the web in mind. 
 
 I'm not talking about another open-source alternative to Instagram or another social network. I'm talking about an easy way of sharing visual creations, like photos. Maybe with some small social aspects, but without the constant run for likes, algorithms and other things that increase the pressure on humans and ultimately don't make us happy.
 
 Maybe someday this will be available. For now, I hope `Photon 11ty` can also help in small ways.
+
+P.S. I removed the `/photos` section from this website and moved everything over to [photos.fruechtl.me](https://photos.fruechtl.me) running `Photon 11ty`.
