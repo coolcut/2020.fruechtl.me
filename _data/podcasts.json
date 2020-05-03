@@ -24,6 +24,12 @@
     "htmlUrl": "https://www.relay.fm/cortex"
   },
   {
+    "title": "Das Coronavirus-Update mit Christian Drosten",
+    "image": "coronavirus-update.jpg",
+    "xmlUrl": "https://www.ndr.de/nachrichten/info/podcast4684.xml",
+    "htmlUrl": "https://www.ndr.de/nachrichten/info/podcast4684.html"
+  },
+  {
     "title": "Design Details",
     "image": "design-details.jpg",
     "xmlUrl": "https://rss.simplecast.com/podcasts/1034/rss",
@@ -34,12 +40,6 @@
     "image": "dsp.jpg",
     "xmlUrl": "https://feeds.buzzsprout.com/887923.rss",
     "htmlUrl": "https://basalt.io/ds-podcast"
-  },
-  {
-    "title": "Das Coronavirus-Update mit Christian Drosten",
-    "image": "coronavirus-update.jpg",
-    "xmlUrl": "https://www.ndr.de/nachrichten/info/podcast4684.xml",
-    "htmlUrl": "https://www.ndr.de/nachrichten/info/podcast4684.html"
   },
   {
     "title": "Die neuen Zwanziger",
@@ -106,11 +106,5 @@
     "image": "wrint.jpg",
     "xmlUrl": "https://www.wrint.de/feed/podcast/",
     "htmlUrl": "http://www.wrint.de/kommt-reden-wir-zusammen/"
-  },
-  {
-    "title": "Wir. Müssen Reden",
-    "image": "wmr.png",
-    "xmlUrl": "https://wir.muessenreden.de/feed/podcast/",
-    "htmlUrl": "https://wir.muessenreden.de/"
   }
 ]
