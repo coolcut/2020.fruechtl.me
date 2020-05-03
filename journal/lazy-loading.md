@@ -23,9 +23,9 @@ After [some research](https://css-tricks.com/the-complete-guide-to-lazy-loading-
 
 This couldn't be easier! It works with `<picture>`, `srcset` and also supports `<iframe>`.
 
-To be honest, the simplicity was enough for me to use it in this project, regardless of the browser support. I knew, browsers would catch up at some point. For me, the beauty about this new loading attribute is the fact that browser support is really decent just now — this was a positive surprise.
+To be honest, the simplicity was enough for me to use it in this project, regardless of the browser support. I knew, browsers would catch up at some point. For me, the beauty about this new loading attribute is the fact that browser support is really decent now — this was a positive surprise.
 
-Chrome is supporting it since [version 75](https://twitter.com/addyosmani/status/1114777583302799360?s=20) and [Firefox just recently shipped an update](https://www.mozilla.org/en-US/firefox/75.0/releasenotes/) to also support it.
+Chrome is supporting it since [version 75](https://twitter.com/addyosmani/status/1114777583302799360?s=20) and [Firefox recently shipped an update](https://www.mozilla.org/en-US/firefox/75.0/releasenotes/) to also support it.
 
 One interesting side note: [Firefox seems to be more aggressive](https://caniuse.com/#feat=loading-lazy-attr) in terms of “being lazy”. To be honest, I like this approach, but we will see what works better in the future.
 

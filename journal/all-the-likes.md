@@ -16,11 +16,11 @@ At some point in February, different posts bubbled into my timeline with a simil
 
 > I want a way to display specific bookmarks, I saved in my Pinboard.in account, to also appear publicly on my website.
 
-With a goal in mind, I looked into technical solutions to archive the desired outcome. Thankfully, 11ty offers help with a feature called [JavaScript Data Files](https://www.11ty.dev/docs/data-js/). With this feature, you simply run code at build time to fetch data — exactly the thing I needed to do.
+With a goal in mind, I looked into technical solutions to archive the desired outcome. Thankfully, 11ty offers help with a feature called [JavaScript Data Files](https://www.11ty.dev/docs/data-js/). With this feature, you run code at build time to fetch data — exactly the thing I needed to do.
 
 ## Connecting everything with Pinboard
 
-With the power of `JavaScript Data Files` and a good amount of inspiration and learning from the [11ty Feedbin Plugin](https://github.com/WebInspectInc/eleventy-plugin-feedbin), I quickly got a first version up and running. Besides some fancy caching stuff (which I basically took from the `11ty Feedbin Plugin`), the primary task was to call the Pinboard API and get the data I wanted.
+With the power of `JavaScript Data Files` and a good amount of inspiration and learning from the [11ty Feedbin Plugin](https://github.com/WebInspectInc/eleventy-plugin-feedbin), I quickly got a first version up and running. Besides some fancy caching stuff (which I took from the `11ty Feedbin Plugin`), the primary task was to call the Pinboard API and get the data I wanted.
 
 Therefore, I stored my Pinboard credentials inside a `.env` file and imported it later via the [dotenv](https://www.npmjs.com/package/dotenv) package.
 
@@ -35,7 +35,7 @@ const PASSWORD = process.env.PINBOARD_PASSWORD;
 ...
 ```
 
-Besides that, I imported the [node-fetch](https://www.npmjs.com/package/node-fetch) package to use the `fetch()` functionality, which is available inside of modern browsers, in a Node.js environment. With all of this, the part of getting the content from Pinboard was just some lines of JavaScript:
+Besides that, I imported the [node-fetch](https://www.npmjs.com/package/node-fetch) package to use the `fetch()` functionality, which is available inside of modern browsers, in a Node.js environment. With all of this, the part of getting the content from Pinboard was only some lines of JavaScript:
 
 ```js
 ...

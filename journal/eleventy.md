@@ -11,7 +11,7 @@ Last week I attended [BeyondTellerand Berlin](https://beyondtellerrand.com/event
 
 Is it essential to use such a massive tool like [Gridsome](https://gridsome.org) to power this site and future playground? I love [Vue](https://vuejs.org/), and it can be a fantastic tool for building web-based applications, but do I really need this kind of power, and do I want to make the people suffer who are visiting the website because of unnecessary bloat they need to download to get the Gridsome experience?
 
-I don't think so. I want to have a lightweight, fast, and very dull foundation for this website. Because of that, I basically removed everything from the Gridsome side and replaced it with some [11ty](https://www.11ty.io) love. Everything is entirely static and crazy fast now. Just look at these two screenshots I took to compare Gridsome and 11ty from the Firefox Network Tab. 🔥 🚀
+I don't think so. I want to have a lightweight, fast, and very dull foundation for this website. Because of that, I removed everything from the Gridsome side and replaced it with some [11ty](https://www.11ty.io) love. Everything is entirely static and crazy fast now. Look at these two screenshots I took to compare Gridsome and 11ty from the Firefox Network Tab. 🔥 🚀
 
 ![](/uploads/journal/gridsome.jpg)
 
