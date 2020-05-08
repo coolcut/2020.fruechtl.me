@@ -31,6 +31,11 @@
 .site-title__link {
   color: var(--text-primary-color);
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--text-secondary-color);
+  }
 }
 
 .site-navigation {
