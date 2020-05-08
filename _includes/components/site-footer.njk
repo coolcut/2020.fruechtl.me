@@ -15,4 +15,7 @@
   </ul>
 </footer>
 
-<script src="/node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+{% if layout == "layouts/post.njk" %}
+  <script src="/node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+{% endif %}
+
