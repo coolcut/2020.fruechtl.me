@@ -22,7 +22,7 @@
 .podcast-item__title {
   margin: 0 0 $spacer-1;
   font-size: $type-scale-6;
-  line-height: 1.25;
+  line-height: $leading-tight;
   word-break: break-word;
 
   @media (min-width: 960px) {
@@ -38,16 +38,16 @@
   }
 
   a {
-    color: $text-caption-color;
+    color: var(--text-secondary-color);
     text-decoration: none;
 
     &:hover {
-      color: $brand-color;
+      color: var(--text-action-hover-color);
       text-decoration: underline;
       text-underline-offset: 6px;
       text-decoration-skip-ink: auto;
       text-decoration-thickness: 2px;
-      text-decoration-color: $brand-color;
+      text-decoration-color: var(--text-action-hover-color);
     }
   }
 }

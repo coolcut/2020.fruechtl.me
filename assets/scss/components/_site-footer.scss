@@ -2,14 +2,13 @@
 ||  Site Footer
 ------------------------------------------------------------------- */
 .c-site-footer {
-  padding-top: 48px;
-  padding-bottom: 24px;
+  padding-top: $spacer-5;
+  padding-bottom: $spacer-4;
 
   @media (min-width: 960px) {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas: "left content right";
-    padding-top: 96px;
-    padding-bottom: 48px;
+    padding: $spacer-7 0 $spacer-5;
   }
 }
 
@@ -27,7 +26,7 @@
 
 .c-site-footer__nav-item {
   display: inline-block;
-  padding: 0 8px;
+  padding: 0 $spacer-1;
   font-size: $type-scale-7;
   @media (min-width: 960px) {
     font-size: $type-scale-6;

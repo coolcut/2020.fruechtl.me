@@ -2,7 +2,7 @@
 ||  Journal Preview
 ------------------------------------------------------------------- */
 .intro {
-  margin: 0 0 96px;
+  margin: 0 0 $spacer-7;
 }
 
 .intro__slogan {
@@ -11,7 +11,7 @@
 
 .journal-preview,
 .dribbble-preview {
-  padding: 96px 0;
+  padding: $spacer-7 0;
   border-top: 1px dashed rgba(255, 255, 255, 0.12);
 }
 
@@ -47,7 +47,7 @@
 
 .dribbble-preview-figure {
   margin: 0;
-  padding: 8px;
+  padding: $spacer-1;
   border-radius: 6px;
   border: 1px dashed rgba(255, 255, 255, 0.12);
 }
@@ -60,7 +60,7 @@
 .dribbble-preview-figure__caption {
   position: absolute;
   display: none;
-  left: 16px;
-  bottom: 16px;
+  left: $spacer-2;
+  bottom: $spacer-2;
   color: var(--text-primary-color);
 }

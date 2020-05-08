@@ -3,15 +3,15 @@
 ------------------------------------------------------------------- */
 .site-header {
   grid-template-columns: 1fr;
-  margin-bottom: 48px;
-  padding-top: 24px;
+  margin-bottom: $spacer-5;
+  padding-top: $spacer-3;
   align-items: center;
 
   @media (min-width: 960px) {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas: "title navigation info";
-    margin-bottom: 96px;
-    padding-top: 48px;
+    margin-bottom: $spacer-7;
+    padding-top: $spacer-5;
   }
 }
 
@@ -47,12 +47,12 @@
 }
 
 .site-navigation-item {
-  margin-left: 24px;
+  margin-left: $spacer-3;
   font-size: $type-scale-5;
   line-height: $leading-6;
 
   @media (min-width: 960px) {
-    margin-left: 48px;
+    margin-left: $spacer-5;
   }
 
   &:first-child {

@@ -1,14 +1,15 @@
 /* ------------------------------------------------------------------
-||  Variables
+||  Spacer
 ------------------------------------------------------------------- */
-$brand-color: #0e2758;
-$brand-color-light: #a7c0f1;
-$brand-color-cloud: #dce6f9;
-
-$text-headline-color: $brand-color;
-$text-color: #4b4f58;
-$text-caption-color: #6c7689;
-$text-link-color: #122ba5;
+$spacer-0: 0;
+$spacer-1: 0.5rem;
+$spacer-2: 1rem;
+$spacer-3: 1.5rem;
+$spacer-4: 2rem;
+$spacer-5: 3rem;
+$spacer-6: 4rem;
+$spacer-7: 6rem;
+$spacer-8: 8rem;
 
 /* ------------------------------------------------------------------
 ||  Typography - Sizes
@@ -28,7 +29,6 @@ $type-scale-8: 0.75rem;
 $leading-none: 1;
 $leading-tight: 1.25;
 $leading-normal: 1.65;
-$leading-big: 1.75;
 
 $leading-3: 0.75rem;
 $leading-4: 1rem;
@@ -59,29 +59,3 @@ $font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier
 $font-settings-headline: "ss04" on, "ss05" on, "ss02" on, "ss07" on, "ss03" on,
   "ss06" on, "ss08" on, "ss01" on, "ordn" on, "zero" on;
 $font-settings-body: "ss01" on, "ss02" on, "ss03" on, "zero" on;
-
-/* ------------------------------------------------------------------
-||  Spacer
-------------------------------------------------------------------- */
-$spacer-0: 0;
-$spacer-1: 0.25rem;
-$spacer-2: 0.5rem;
-$spacer-3: 0.75rem;
-$spacer-4: 1rem;
-$spacer-5: 1.5rem;
-$spacer-6: 2rem;
-$spacer-7: 2.5rem;
-$spacer-8: 3rem;
-$spacer-9: 3.5rem;
-$spacer-10: 4rem;
-$spacer-11: 4.5rem;
-$spacer-12: 5rem;
-$spacer-13: 6rem;
-$spacer-14: 8rem;
-
-/* ------------------------------------------------------------------
-||  Layout
-------------------------------------------------------------------- */
-$layout-wrapper: 96ch;
-$layout-wrapper-small: 64ch;
-$layout-wrapper-tiny: 56ch;
