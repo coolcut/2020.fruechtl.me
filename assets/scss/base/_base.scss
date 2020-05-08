@@ -1,6 +1,18 @@
+body {
+  background-color: var(--background-color);
+}
+
 .wrapper {
-  margin: 0 auto;
-  max-width: $layout-wrapper-small;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 1312px;
+
+  @media (min-width: 960px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 .video {

@@ -1,0 +1,18 @@
+<section class="journal-preview">
+  <div class="grid grid--basic">
+    <aside class="grid__trailing-element">
+      <h3 class="title-3">Journal</h3>
+    </aside>
+    <div class="grid__content-element--full">
+      <div class="journal-preview__list">
+        {% set posts = collections.postsPreview %}
+        {% for post in posts %}
+        <a class="list__item-link" href="{{ post.url | url }}">
+          <h3 class="title-3 list__item__title">{{ post.data.title }}</h3>
+          <time class="list__item__caption" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate}}</time>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

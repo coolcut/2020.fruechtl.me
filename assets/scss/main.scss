@@ -1,10 +1,12 @@
 @import "helpers/variables";
+@import "color-schemes";
 
 @import "base/sanitize";
 @import "base/font-face";
 @import "base/typography";
 
 @import "components/tags";
+@import "components/lists";
 @import "components/site-header";
 @import "components/site-footer";
 @import "components/redesign-notice";
@@ -13,6 +15,7 @@
 @import "base/base";
 
 @import "pages/base";
+@import "pages/homepage";
 @import "pages/journal";
 @import "pages/podcasts";
 @import "pages/likes";

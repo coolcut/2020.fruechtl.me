@@ -19,6 +19,12 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob(["journal/*.md"]);
   });
 
+  eleventyConfig.addCollection("postsPreview", function(collection) {
+    return collection.getFilteredByGlob(["journal/*.md"]).sort(function(a, b) {
+      return b.date - a.date;
+    }).slice(0, 4);
+  });
+
   eleventyConfig.addCollection("photos", function(collection) {
     return collection.getFilteredByGlob(["photos/*.md"]);
   });

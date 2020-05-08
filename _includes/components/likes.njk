@@ -1,0 +1,10 @@
+<ul class="list list--link">
+{% for like in likes %}
+  <li class="list__item">
+    <a class="list__item-link" href="{{ like.href }}">
+      <h3 class="title-3 list__item__title">{{ like.description }}</h3>
+      <span class="list__item__caption">{{ like.href | simpleURL }}</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>

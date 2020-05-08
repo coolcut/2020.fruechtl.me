@@ -29,7 +29,7 @@
 }
 
 .site-title__link {
-  color: #0d0e12;
+  color: var(--text-primary-color);
   text-decoration: none;
 }
 
@@ -80,6 +80,11 @@
 
 .site-navigation-item__link,
 .site-more-information__link {
-  color: #6c7689;
+  color: var(--text-secondary-color);
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--text-primary-color);
+  }
 }

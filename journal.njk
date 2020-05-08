@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+metatitle: Journal
+bodyClass: cs-journal
+---
+
+<main class="grid grid--basic">
+  <section class="grid__content-element">
+    {% set posts = collections.posts | reverse %}
+    {% include "components/posts.njk" %}
+  </section>
+</main>

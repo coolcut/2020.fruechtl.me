@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------------
+||  List
+------------------------------------------------------------------- */
+.list {
+  display: grid;
+  grid-gap: 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list--link {
+}
+
+.list__item {
+}
+
+.list__item-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.32);
+    opacity: 0;
+    border-radius: 6px;
+
+    margin-top: -16px;
+    height: calc(100% + 32px);
+    margin-left: -16px;
+    width: calc(100% + 32px);
+    transform: scale(0.95);
+    transition: all 0.24s ease-in-out;
+  }
+
+  > * {
+    position: relative;
+    z-index: 10;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.list__item__title {
+  margin: 0 0 $spacer-1;
+  font-size: $type-scale-3;
+  line-height: $leading-7;
+}
+
+.list__item__caption {
+  display: block;
+  font-size: $type-scale-6;
+  font-style: italic;
+  line-height: $leading-5;
+  color: var(--text-secondary-color);
+}

@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.njk
 metatitle: About
+bodyClass: cs-about
 ---
 
 # About

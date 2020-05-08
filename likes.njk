@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 metatitle: Likes
+bodyClass: cs-likes
 ---
 
 <main class="grid grid--basic">
@@ -8,13 +9,6 @@ metatitle: Likes
     <h2>Likes</h2>
   </aside>
   <section class="grid__content-element">
-    <ul class="likes-list">
-    {% for like in likes %}
-      <li class="likes__item">
-        <h3 class="likes__title"><a href="{{ like.href }}">{{ like.description }}</a></h3>
-        <span class="likes__date">{{ like.href | simpleURL }}</span>
-      </li>
-    {% endfor %}
-    </ul>
+    {% include "components/likes.njk" %}
   </section>
 </main>

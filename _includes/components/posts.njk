@@ -1,10 +1,10 @@
-<section class="journal-posts">
+<ul class="list list--link">
 {% for post in posts %}
-  <article class="post-preview">
-    <h2 class="post-title">
-      <a class="post-title__link" href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h2>
-    <time class="post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate}}</time>
-  </article>
+  <li class="list__item">
+    <a class="list__item-link" href="{{ post.url | url }}">
+      <h3 class="title-3 list__item__title">{{ post.data.title }}</h3>
+      <time class="list__item__caption" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate}}</time>
+    </a>
+  </li>
 {% endfor %}
-</section>
+</ul>

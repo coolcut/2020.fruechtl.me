@@ -1,0 +1,84 @@
+/* ------------------------------------------------------------------
+||  Color Schemes
+------------------------------------------------------------------- */
+body {
+  --background-color: #ffffff;
+  --text-primary-color: rgba(0, 0, 0, 1);
+  --text-secondary-color: rgba(0, 0, 0, 0.64);
+  --text-action-color: #a64a23;
+  --text-action-hover-color: #a64a23;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --background-color: #000000;
+    --text-primary-color: rgba(255, 255, 255, 1);
+    --text-secondary-color: rgba(255, 255, 255, 0.64);
+    --text-action-color: #a64a23;
+    --text-action-hover-color: #a64a23;
+  }
+}
+
+.cs-homepage {
+  --background-color: #f1f6f9;
+  --text-primary-color: rgba(0, 0, 0, 1);
+  --text-secondary-color: rgba(0, 0, 0, 0.64);
+  --text-action-color: #a64a23;
+  --text-action-hover-color: #a64a23;
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #12232b;
+    --text-primary-color: rgba(255, 255, 255, 1);
+    --text-secondary-color: rgba(255, 255, 255, 0.64);
+    --text-action-color: #a64a23;
+    --text-action-hover-color: #a64a23;
+  }
+}
+
+.cs-about {
+  --background-color: #f1f3f9;
+  --text-primary-color: rgba(0, 0, 0, 1);
+  --text-secondary-color: rgba(0, 0, 0, 0.64);
+  --text-action-color: #a64a23;
+  --text-action-hover-color: #a64a23;
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #182339;
+    --text-primary-color: rgba(255, 255, 255, 1);
+    --text-secondary-color: rgba(255, 255, 255, 0.64);
+    --text-action-color: #a64a23;
+    --text-action-hover-color: #a64a23;
+  }
+}
+
+.cs-journal {
+  --background-color: #fbfaf9;
+  --text-primary-color: rgba(0, 0, 0, 1);
+  --text-secondary-color: rgba(0, 0, 0, 0.64);
+  --text-action-color: #a64a23;
+  --text-action-hover-color: #a64a23;
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #191610;
+    --text-primary-color: rgba(255, 255, 255, 1);
+    --text-secondary-color: rgba(255, 255, 255, 0.64);
+    --text-action-color: #a64a23;
+    --text-action-hover-color: #a64a23;
+  }
+}
+
+.cs-likes {
+  --background-color: #fcf8f9;
+  --text-primary-color: rgba(0, 0, 0, 1);
+  --text-secondary-color: rgba(0, 0, 0, 0.64);
+  --text-action-color: #a64a23;
+  --text-action-hover-color: #a64a23;
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #391823;
+    --text-primary-color: rgba(255, 255, 255, 1);
+    --text-secondary-color: rgba(255, 255, 255, 0.64);
+    --text-action-color: #a64a23;
+    --text-action-hover-color: #a64a23;
+  }
+}

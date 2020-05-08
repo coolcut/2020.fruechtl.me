@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------------
+||  Journal Preview
+------------------------------------------------------------------- */
+.intro {
+  margin: 0 0 96px;
+}
+
+.journal-preview,
+.dribbble-preview {
+  padding: 96px 0;
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.journal-preview__list,
+.dribbble-preview__list {
+  display: grid;
+  grid-gap: 48px;
+}
+
+.journal-preview__list {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dribbble-preview__list {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dribbble-preview__figure {
+  margin: 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+
+  img {
+    border-radius: 3px;
+  }
+}

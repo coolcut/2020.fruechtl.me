@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="{{ '/node_modules/lite-youtube-embed/src/lite-yt-embed.css' | url }}">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for 2020.fruechtl.me" href="{{ '/feed.xml' | url }}" />
 </head>
-<body>
+<body class="{{ bodyClass }}">
   {% include "components/site-header.njk" %}
   {{ content | safe }}
   {% include "components/site-footer.njk" %}
