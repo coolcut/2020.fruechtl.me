@@ -1,9 +1,8 @@
 ---
 layout: layouts/page.njk
+title: Impressum
 metatitle: Impressum
 ---
-
-# Impressum
 
 Angaben gemäß § 5 TMG:
 

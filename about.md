@@ -1,10 +1,9 @@
 ---
 layout: layouts/page.njk
+title: About
 metatitle: About
 bodyClass: cs-about
 ---
-
-# About
 
 I am a designer, developer and podcaster. I live and work in the heart of Europe, Frankfurt am Main in Germany.
 

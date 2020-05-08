@@ -1,9 +1,8 @@
 ---
 layout: layouts/page.njk
+title: Elsewhere
 metatitle: Elsewhere
 ---
-
-# Elsewhere
 
 Social networks or other sites that are similar in their shape and form come and go. I really want to focus on publishing a lot of things that are important to me here, on my own website.
 

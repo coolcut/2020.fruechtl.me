@@ -66,7 +66,7 @@ img {
 code,
 kbd,
 samp {
-  padding: $spacer-1 $spacer-2;
+  padding: #{$spacer-1 / 2} $spacer-1;
   font-size: $type-scale-6;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.08);
