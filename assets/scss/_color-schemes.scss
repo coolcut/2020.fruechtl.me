@@ -1,12 +1,13 @@
 /* ------------------------------------------------------------------
 ||  Color Schemes
 ------------------------------------------------------------------- */
+
 body {
   --background-color: #ffffff;
   --text-primary-color: rgba(0, 0, 0, 1);
   --text-secondary-color: rgba(0, 0, 0, 0.64);
   --text-action-color: #a64a23;
-  --text-action-hover-color: #a64a23;
+  --text-action-hover-color: red;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,8 +15,8 @@ body {
     --background-color: #000000;
     --text-primary-color: rgba(255, 255, 255, 1);
     --text-secondary-color: rgba(255, 255, 255, 0.64);
-    --text-action-color: #a64a23;
-    --text-action-hover-color: #a64a23;
+    --text-action-color: #ff9f0a;
+    --text-action-hover-color: #{darken(#ff9f0a, 16%)};
   }
 }
 
@@ -39,15 +40,15 @@ body {
   --background-color: #f1f3f9;
   --text-primary-color: rgba(0, 0, 0, 1);
   --text-secondary-color: rgba(0, 0, 0, 0.64);
-  --text-action-color: #a64a23;
-  --text-action-hover-color: #a64a23;
+  --text-action-color: #8f3628;
+  --text-action-hover-color: #a33d2e;
 
   @media (prefers-color-scheme: dark) {
-    --background-color: #182339;
+    --background-color: #0f1729;
     --text-primary-color: rgba(255, 255, 255, 1);
     --text-secondary-color: rgba(255, 255, 255, 0.64);
-    --text-action-color: #a64a23;
-    --text-action-hover-color: #a64a23;
+    --text-action-color: #e06751;
+    --text-action-hover-color: #{darken(#e06751, 8%)};
   }
 }
 
