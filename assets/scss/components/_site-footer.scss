@@ -34,12 +34,12 @@
   }
 
   a {
-    color: $text-caption-color;
-    text-decoration-color: $text-caption-color;
+    color: var(--text-secondary-color);
+    text-decoration-color: var(--text-secondary-color);
 
     &:hover {
-      color: $brand-color;
-      text-decoration-color: $brand-color;
+      color: var(--text-primary-color);
+      text-decoration-color: var(--text-primary-color);
     }
   }
 }
