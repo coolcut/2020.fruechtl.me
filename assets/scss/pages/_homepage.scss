@@ -2,7 +2,15 @@
 ||  Journal Preview
 ------------------------------------------------------------------- */
 .intro {
-  margin: 0 0 $spacer-7;
+  margin: 0 0 $spacer-4;
+
+  @media (min-width: 960px) {
+    margin: 0 0 $spacer-7;
+  }
+}
+
+.intro__title {
+  margin: 0 0 $spacer-1;
 }
 
 .intro__slogan {
@@ -11,8 +19,11 @@
 
 .journal-preview,
 .dribbble-preview {
-  padding: $spacer-7 0;
+  padding: $spacer-4 0;
   border-top: 1px dashed rgba(255, 255, 255, 0.12);
+  @media (min-width: 960px) {
+    padding: $spacer-7 0;
+  }
 }
 
 .journal-preview__list,

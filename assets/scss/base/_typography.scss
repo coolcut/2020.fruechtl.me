@@ -83,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 $spacer-5;
+  margin: 0;
   font-family: $font-family-headline;
   font-feature-settings: $font-settings-headline;
   line-height: 1.25;
@@ -110,13 +110,21 @@ h4 {
 }
 
 .title-1 {
-  font-size: 56px;
-  line-height: 72px;
+  font-size: 40px;
+  line-height: $leading-tight;
+
+  @media (min-width: 960px) {
+    font-size: 56px;
+  }
 }
 
 .title-2 {
-  font-size: 40px;
-  line-height: 56px;
+  font-size: 28px;
+  line-height: $leading-tight;
+
+  @media (min-width: 960px) {
+    font-size: 40px;
+  }
 }
 
 .title-3 {
