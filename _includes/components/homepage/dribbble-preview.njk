@@ -4,12 +4,12 @@
       <h3 class="title-3">Dribbble</h3>
     </aside>
     <div class="grid__content-element--full">
-      <div class="dribbble-preview__list">
+      <div class="dribbble-preview-list">
         {% for post in dribbble %}
-        <a href="{{ post.html_url }}">
-          <figure class="dribbble-preview__figure">
-            <img src="{{ post.images.hidpi }}" loading="lazy" alt="An embed embed post from my Dribbble account with the name {{ post.title }}">
-            <figcaption>{{ post.title }}</figcaption>
+        <a class="dribbble-preview-list__item" href="{{ post.html_url }}">
+          <figure class="dribbble-preview-figure">
+            <img class="dribbble-preview-figure__image" src="{{ post.images.hidpi }}" loading="lazy" alt="An embed embed post from my Dribbble account with the name {{ post.title }}">
+            <figcaption class="dribbble-preview-figure__caption">{{ post.title }}</figcaption>
           </figure>
         </a>
         {% endfor %}

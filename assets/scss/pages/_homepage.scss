@@ -12,7 +12,7 @@
 }
 
 .journal-preview__list,
-.dribbble-preview__list {
+.dribbble-preview-list {
   display: grid;
   grid-gap: 48px;
 }
@@ -21,17 +21,42 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.dribbble-preview__list {
+.dribbble-preview-list {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.dribbble-preview__figure {
+.dribbble-preview-list__item {
+  position: relative;
+
+  &:hover,
+  &:focus {
+    .dribbble-preview-figure__image {
+      filter: blur(4px) grayscale(50%) opacity(0.2);
+      transform: scale(0.95);
+    }
+
+    .dribbble-preview-figure__caption {
+      display: block;
+    }
+  }
+}
+
+.dribbble-preview-figure {
   margin: 0;
   padding: 8px;
   border-radius: 6px;
   border: 1px dashed rgba(255, 255, 255, 0.12);
+}
 
-  img {
-    border-radius: 3px;
-  }
+.dribbble-preview-figure__image {
+  border-radius: 3px;
+  transition: all 0.24s;
+}
+
+.dribbble-preview-figure__caption {
+  position: absolute;
+  display: none;
+  left: 16px;
+  bottom: 16px;
+  color: var(--text-primary-color);
 }
