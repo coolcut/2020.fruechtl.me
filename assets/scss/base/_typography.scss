@@ -17,7 +17,7 @@ body {
 p,
 ul,
 ol {
-  margin: 0 0 $spacer-5;
+  margin: 0 0 $spacer-3;
 }
 
 a {
@@ -25,7 +25,6 @@ a {
   text-underline-offset: 6px;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: 2px;
-  text-decoration-color: var(--text-action-color);
 
   &:hover {
     color: var(--text-action-hover-color);
@@ -69,9 +68,13 @@ samp {
   padding: #{$spacer-1 / 2} $spacer-1;
   font-size: $type-scale-6;
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 4px;
   color: var(--text-primary-color);
+  background-color: #{$black-10};
+  border-radius: $border-radius-default;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #{$white-10};
+  }
 }
 
 /* ------------------------------------------------------------------

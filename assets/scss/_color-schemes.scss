@@ -1,85 +1,50 @@
 /* ------------------------------------------------------------------
 ||  Color Schemes
 ------------------------------------------------------------------- */
-
 body {
-  --background-color: #ffffff;
-  --text-primary-color: rgba(0, 0, 0, 1);
-  --text-secondary-color: rgba(0, 0, 0, 0.64);
-  --text-action-color: #a64a23;
-  --text-action-hover-color: red;
+  --background-color: #{$white-90};
+  --text-primary-color: #{$black-90};
+  --text-secondary-color: #{$black-60};
+  --border-color: #{$black-10};
+  --text-action-color: rgba(73, 71, 215, 0.9);
+  --text-action-hover-color: rgba(73, 71, 215, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    --background-color: #000000;
-    --text-primary-color: rgba(255, 255, 255, 1);
-    --text-secondary-color: rgba(255, 255, 255, 0.64);
-    --text-action-color: #ff9f0a;
-    --text-action-hover-color: #{darken(#ff9f0a, 16%)};
+    --background-color: #{$black-90};
+    --text-primary-color: #{$white-90};
+    --text-secondary-color: #{$white-60};
+    --border-color: #{$white-10};
+    --text-action-color: rgba(255, 159, 10, 0.9);
+    --text-action-hover-color: rgba(255, 159, 10, 0.7);
   }
 }
 
 .cs-homepage {
   --background-color: #f1f6f9;
-  --text-primary-color: rgba(0, 0, 0, 1);
-  --text-secondary-color: rgba(0, 0, 0, 0.64);
-  --text-action-color: #a64a23;
-  --text-action-hover-color: #a64a23;
 
   @media (prefers-color-scheme: dark) {
     --background-color: #12232b;
-    --text-primary-color: rgba(255, 255, 255, 1);
-    --text-secondary-color: rgba(255, 255, 255, 0.64);
-    --text-action-color: #a64a23;
-    --text-action-hover-color: #a64a23;
   }
 }
 
 .cs-about {
-  --background-color: #f1f3f9;
-  --text-primary-color: rgba(0, 0, 0, 1);
-  --text-secondary-color: rgba(0, 0, 0, 0.64);
-  --text-action-color: #8f3628;
-  --text-action-hover-color: #a33d2e;
+  --background-color: #f8f9fc;
+  --text-action-color: rgba(220, 51, 24, 0.9);
+  --text-action-hover-color: rgba(220, 51, 24, 0.7);
 
   @media (prefers-color-scheme: dark) {
     --background-color: #0f1729;
-    --text-primary-color: rgba(255, 255, 255, 1);
-    --text-secondary-color: rgba(255, 255, 255, 0.64);
-    --text-action-color: #e06751;
-    --text-action-hover-color: #{darken(#e06751, 8%)};
-  }
-}
-
-.cs-journal {
-  --background-color: #fbfaf9;
-  --text-primary-color: rgba(0, 0, 0, 1);
-  --text-secondary-color: rgba(0, 0, 0, 0.64);
-  --text-action-color: #a64a23;
-  --text-action-hover-color: #a64a23;
-
-  @media (prefers-color-scheme: dark) {
-    --background-color: #191610;
-    --text-primary-color: rgba(255, 255, 255, 1);
-    --text-secondary-color: rgba(255, 255, 255, 0.64);
-    --text-action-color: #a64a23;
-    --text-action-hover-color: #a64a23;
+    --text-action-color: rgba(224, 103, 81, 1);
+    --text-action-hover-color: rgba(224, 103, 81, 0.7);
   }
 }
 
 .cs-likes {
   --background-color: #fcf8f9;
-  --text-primary-color: rgba(0, 0, 0, 1);
-  --text-secondary-color: rgba(0, 0, 0, 0.64);
-  --text-action-color: #a64a23;
-  --text-action-hover-color: #a64a23;
 
   @media (prefers-color-scheme: dark) {
     --background-color: #391823;
-    --text-primary-color: rgba(255, 255, 255, 1);
-    --text-secondary-color: rgba(255, 255, 255, 0.64);
-    --text-action-color: #a64a23;
-    --text-action-hover-color: #a64a23;
   }
 }

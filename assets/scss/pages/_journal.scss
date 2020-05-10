@@ -2,9 +2,21 @@
 ||  Journal
 ------------------------------------------------------------------- */
 .post-header {
-  margin: 0 0 $spacer-6;
+  margin: 0 0 $spacer-4;
 }
 
 .post-content {
   margin: 0 0 $spacer-8;
+}
+
+.post,
+.typography-test {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 $spacer-3;
+    padding: $spacer-4 0 0;
+  }
 }

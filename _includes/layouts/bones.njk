@@ -15,11 +15,13 @@
   <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}">
   <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
 
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for 2020.fruechtl.me" href="{{ '/feed.xml' | url }}" />
+
   <style>{% include "css/main.css" %}</style>
-  {% if layout == "layouts/post.njk" %}
+
+  {% if layout == "layouts/post.njk" or bodyClass == "typography-test" %}
   <link rel="stylesheet" href="{{ '/node_modules/lite-youtube-embed/src/lite-yt-embed.css' | url }}">
   {% endif %}
-  <link rel="alternate" type="application/rss+xml" title="RSS Feed for 2020.fruechtl.me" href="{{ '/feed.xml' | url }}" />
 </head>
 <body class="{{ bodyClass }}">
   {% include "components/site-header.njk" %}

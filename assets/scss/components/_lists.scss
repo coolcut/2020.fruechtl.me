@@ -27,9 +27,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.32);
+    background: $black-10;
     opacity: 0;
-    border-radius: 6px;
+    border-radius: $border-radius-default;
 
     margin-top: -8px;
     height: calc(100% + 16px);
@@ -37,6 +37,10 @@
     width: calc(100% + 16px);
     transform: scale(0.95);
     transition: all 0.24s ease-in-out;
+
+    @media (prefers-color-scheme: dark) {
+      background: $black-30;
+    }
 
     @media (min-width: 960px) {
       margin-top: -16px;

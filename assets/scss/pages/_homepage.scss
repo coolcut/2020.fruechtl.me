@@ -20,7 +20,7 @@
 .journal-preview,
 .dribbble-preview {
   padding: $spacer-4 0;
-  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+  border-top: 1px dashed var(--border-color);
   @media (min-width: 960px) {
     padding: $spacer-7 0;
   }
@@ -58,7 +58,7 @@
   &:focus {
     .dribbble-preview-figure__image {
       filter: blur(4px) grayscale(50%) opacity(0.2);
-      transform: scale(0.95);
+      transform: scale(0.98);
     }
 
     .dribbble-preview-figure__caption {
@@ -72,12 +72,12 @@
 .dribbble-preview-figure {
   margin: 0;
   padding: $spacer-1;
-  border-radius: 6px;
-  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: $border-radius-default;
+  border: 1px dashed var(--border-color);
 }
 
 .dribbble-preview-figure__image {
-  border-radius: 3px;
+  border-radius: $border-radius-small;
   transition: all 0.24s;
 }
 
