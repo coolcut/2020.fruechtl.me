@@ -5,6 +5,14 @@
   margin: 0 0 $spacer-4;
 }
 
+.post-title {
+  margin: 0 0 $spacer-1;
+}
+
+.post-date {
+  @extend .list__item__caption;
+}
+
 .post-content {
   margin: 0 0 $spacer-8;
 }
