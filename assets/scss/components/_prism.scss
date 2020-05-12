@@ -11,9 +11,9 @@ pre[class*="language-"] {
   line-height: 1.375;
   direction: ltr;
   text-align: left;
-  white-space: pre;
+  white-space: pre-wrap;
   word-spacing: normal;
-  word-break: normal;
+  word-wrap: break-word;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
