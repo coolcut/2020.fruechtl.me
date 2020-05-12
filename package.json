@@ -34,5 +34,8 @@
     "markdown-it-anchor": "^5.2.7",
     "moment": "^2.25.3",
     "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@percy/script": "^1.0.3"
   }
 }
