@@ -51,8 +51,8 @@ code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: 0.5em 0;
+  margin: 0 0 $spacer-3;
+  padding: $spacer-3;
   overflow: auto;
 }
 
@@ -211,8 +211,6 @@ pre > code.highlight {
 
   /* Code blocks */
   pre[class*="language-"] {
-    padding: 1em;
-    margin: 0.5em 0;
     overflow: auto;
   }
 
