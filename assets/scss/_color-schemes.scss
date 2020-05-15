@@ -2,7 +2,7 @@
 ||  Color Schemes
 ------------------------------------------------------------------- */
 body {
-  --background-color: #{$white-90};
+  --background-color: #f5f3ef;
   --text-primary-color: #{$black-90};
   --text-secondary-color: #{$black-60};
   --border-color: #{$black-10};
@@ -30,7 +30,7 @@ body {
 }
 
 .cs-about {
-  --background-color: #f8f9fc;
+  --background-color: #e9edf7;
   --text-action-color: rgba(220, 51, 24, 0.9);
   --text-action-hover-color: rgba(220, 51, 24, 0.7);
 
@@ -42,7 +42,7 @@ body {
 }
 
 .cs-likes {
-  --background-color: #fcf8f9;
+  --background-color: #f7edf1;
 
   @media (prefers-color-scheme: dark) {
     --background-color: #391823;
