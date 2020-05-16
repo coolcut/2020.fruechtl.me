@@ -2,11 +2,16 @@
 layout: layouts/home.njk
 metatitle: Journal
 bodyClass: cs-journal
+pagination:
+  data: collections.posts
+  size: 5
+  reverse: true
+  alias: posts
 ---
 
 <main class="grid grid--basic">
   <section class="grid__content-element">
-    {% set posts = collections.posts | reverse %}
     {% include "components/posts.njk" %}
+    {% include "components/journal-pagination.njk" %}
   </section>
 </main>

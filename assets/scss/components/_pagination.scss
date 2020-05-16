@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------------
+||  Pagination
+------------------------------------------------------------------- */
+.pagination {
+  padding: $spacer-4 0;
+  @media (min-width: 960px) {
+    padding: $spacer-7 0;
+  }
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+}
+
+.pagination-list__item {
+  padding: 0 $spacer-1;
+}
