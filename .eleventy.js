@@ -91,6 +91,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("uploads");
+  eleventyConfig.addPassthroughCopy("favicons");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy('admin/config.yml');
   eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
