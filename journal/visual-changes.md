@@ -12,7 +12,7 @@ This site looks different now! And to tell you a little secret, this new look al
 
 During the past couple of weeks, I prepared this site to become more mature. I wanted to drop the "this is a blog" feeling it communicated before — at least this was my feeling back then.
 
-To tackle this problem, I first tried to build a layout system based on a grid. That allowed me to be flexible but also convey the feeling of similarity.
+To tackle this problem, I first tried to build a layout system based on a grid that allowed me to be flexible but also convey the feeling of similarity.
 
 To support my descriptions above, take a look at the following example page:
 
