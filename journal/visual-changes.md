@@ -4,6 +4,8 @@ title: Visual changes
 date: 2020-05-24T09:00:00
 tags:
   - redesign
+  - color
+  - grid
 ---
 
 This site looks different now! And to tell you a little secret, this new look also depends on the settings of your operating systems. Which mode are you currently using? Dark Mode? Light Mode? The visual changes reflect your settings. Try it out yourself! 🌈
