@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Visual changes
-date: 2020-05-21T09:00:00
+date: 2020-05-24T09:00:00
 tags:
   - redesign
 ---
@@ -10,9 +10,7 @@ This site looks different now! And to tell you a little secret, this new look al
 
 ## Part 1 — More structure
 
-During the past couple of weeks, I prepared this site to become more mature. I wanted to drop the "this is a blog" feeling it communicated before — at least this was my feeling back then.
-
-To tackle this problem, I first tried to build a layout system based on a grid that allowed me to be flexible but also convey the feeling of similarity.
+During the past couple of weeks, I prepared this site to become more mature. I wanted to drop the "this is a blog" feeling it communicated before. To tackle this problem, I first tried to build a layout system based on a grid that allowed me to be flexible but also convey the feeling of similarity.
 
 To support my descriptions above, take a look at the following example page:
 
@@ -22,7 +20,7 @@ When you visit some other pages on this website, you can see the three main colu
 
 ## Part 2 — Color is fun
 
-I didn't want to build another standard and simple website with a white background. I wanted to do something with color. In terms of inspiration, I have to mention the websites from [Laura Kalbag](https://laurakalbag.com) and [Tatiana Mac](https://tatianamac.com). Both websites are beautiful in their own way and use color in a characteristic style and create a unique experience.
+I didn't want to build another standard and simple website with a white background. I wanted to do something with color. In terms of inspiration, I have to mention the websites from [Laura Kalbag](https://laurakalbag.com) and [Tatiana Mac](https://tatianamac.com). Both websites are beautiful in their own way using color in a characteristic style and create a unique experience.
 
 I wanted to do something similar, so I set out to create  different color themes for different areas of my website. To make this  extra challenging, I also set out to have them react for the dark/light  mode setting of the person visiting my website.
 
@@ -51,7 +49,7 @@ With this setup, every page still looked the same. But now it was  running on CS
 
 The next step I took was adding unique classes to the individual pages I wanted to change, so I could add different styles to them.
 
-To make this process a bit more clear, let's take the homepage as an example. The homepage only needed a new custom `background-color`, so I've added this piece of code to solve it:
+To make this process a bit more clear, let's take the homepage as an example. The homepage only needed a new custom `background-color`, so I added this piece of code to solve it:
 
 ```css
 .cs-homepage {
@@ -63,9 +61,9 @@ To make this process a bit more clear, let's take the homepage as an example. Th
 }
 ```
 
-All it's doing is reassigning the `--background-color` CSS custom property to `#f1f6f9`. With that, every component which is referencing this `var(--background-color)` somewhere, updates to the new color value.
+All it does is reassigning the `--background-color` CSS custom property to `#f1f6f9`. With that, every component which is referencing this `var(--background-color)` somewhere, updates to the new color value. In this example this only happens on the homepage.
 
-To make it even more awesome and add support for dark mode, I've added the `@media (prefers-color-scheme: dark)` media query. Inside this [media query](https://developer.mozilla.org/de/docs/Web/CSS/Media_Queries/Using_media_queries) I'm reassigning `--background-color` to `#12232b` - that's all.
+To make it even more awesome and add support for dark mode, I added the `@media (prefers-color-scheme: dark)` media query. Inside this [media query](https://developer.mozilla.org/de/docs/Web/CSS/Media_Queries/Using_media_queries) I'm reassigning `--background-color` to `#12232b` - that's all.
 
 With this setup, I can react to every page and set all the CSS custom properties I've listed earlier to any value I want.  
 
