@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Simple responsive CSS Grid
-date: 2020-05-26T12:30:00
+date: 2020-05-28T10:00:00
 media: []
 tags:
   - 11ty
