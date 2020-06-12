@@ -36,6 +36,6 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "@percy/script": "^1.0.3"
+    "@percy/script": "^1.1.0"
   }
 }
