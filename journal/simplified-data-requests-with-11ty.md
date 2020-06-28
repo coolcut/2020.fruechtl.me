@@ -53,3 +53,6 @@ module.exports = async function() {
 With the `duration` option you have full control over the duration timeframe of the cache itself. The `type` is extendable to other types like `text` or `Buffer` as well.
 
 This utility really makes it a breeze to get data from an API and include it on your own website running 11ty.
+
+### Update #1 - June 28th 2020
+For some reason, the way I handled the Pinboard requests stopped working — I couldn't reproduce it myself. Thankfully, [Arne](https://arne.me), who also used this setup came up with a [fix](https://github.com/bahlo/arne.me/commit/039c0e96ffb7ea5a32d7cdc9bb26477757d03ccb) that solved the problem for us.
