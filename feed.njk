@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: true
 		<link href="{{ absolutePostUrl }}"/>
 		<updated>{{ post.date | rssDate }}</updated>
 		<id>{{ absolutePostUrl }}</id>
-		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}<hr/><a href="mailto:jan@fruechtl.me">Reply to Jan</a> if you want to share your thoughts about this post.</content>
+		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}&lt;hr/&gt;&lt;p&gt;&lt;a href=&quot;mailto:jan@fruechtl.me&quot;&gt;Reply to Jan&lt;/a&gt; if you want to share your thoughts about this post.&lt;/p&gt;</content>
 	</entry>
 	{%- endfor %}
 </feed>
