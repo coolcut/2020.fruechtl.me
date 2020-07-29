@@ -7,8 +7,6 @@ tags:
   - iOS
 ---
 
-# Building an iOS application in SwiftUI
-
 One of my personal long-term goals in the past couple of years has been having an app in the App Store. I'm not 100% sure why the idea of having my own app in the App Store appeals to me so much. Maybe it has something to do with touching and interacting with a native app on an iPhone, iPad or Apple Watch that feels more magical to me. Weirdly, it's a feeling that web-based applications (which I'm equipped to build) never gave me.
 
 In the past, I tried to archive this goal multiple times. I tried to get familiar with [Objective-C](https://en.wikipedia.org/wiki/Objective-C), back in the days when [Swift](<https://en.wikipedia.org/wiki/Swift_(programming_language)>) wasn't a thing. After the introduction of Swift I was hyped but couldn't get over that hump of releasing an app. I always got stuck in an intermediate state.
