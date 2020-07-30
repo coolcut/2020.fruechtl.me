@@ -14,4 +14,6 @@ From this point going forward, you can find a small little note that says…
 
 … at the bottom of my RSS entries. It uses a simple `mailto:`, that’s all.
 
+![Feedbin reply-to example](/uploads/journal/feedbin-reply-to-example.jpg)
+
 So, what are you waiting for? Open your RSS Reader of choice, [subscribe to my RSS feed](/journal/feed.xml). If you want to share something with me about a post I’ve written, click this little “Call To Action” and write a mail. 💌
