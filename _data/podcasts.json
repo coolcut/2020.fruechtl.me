@@ -24,12 +24,6 @@
     "htmlUrl": "https://www.relay.fm/cortex"
   },
   {
-    "title": "Das Coronavirus-Update mit Christian Drosten",
-    "image": "coronavirus-update.jpg",
-    "xmlUrl": "https://www.ndr.de/nachrichten/info/podcast4684.xml",
-    "htmlUrl": "https://www.ndr.de/nachrichten/info/podcast4684.html"
-  },
-  {
     "title": "Design Details",
     "image": "design-details.jpg",
     "xmlUrl": "https://rss.simplecast.com/podcasts/1034/rss",
@@ -42,22 +36,22 @@
     "htmlUrl": "https://basalt.io/ds-podcast"
   },
   {
-    "title": "Die neuen Zwanziger",
-    "image": "dnz.jpg",
-    "xmlUrl": "https://neuezwanziger.de/podcast/feed/mp3/",
-    "htmlUrl": "https://neuezwanziger.de/podcast/"
-  },
-  {
-    "title": "Die Wochendämmerung",
-    "image": "wochendaemmerung.jpg",
-    "xmlUrl": "https://wochendaemmerung.de/feed/m4a/",
-    "htmlUrl": "https://wochendaemmerung.de/"
+    "title": "Dithering",
+    "image": "dithering.jpg",
+    "xmlUrl": "https://dithering.fm",
+    "htmlUrl": "https://dithering.fm"
   },
   {
     "title": "drei90",
     "image": "drei90.jpg",
     "xmlUrl": "https://drei90.de/feed/mp3/",
     "htmlUrl": "https://drei90.de/"
+  },
+  {
+    "title": "Exponent",
+    "image": "exponent.png",
+    "xmlUrl": "http://exponent.fm/feed/",
+    "htmlUrl": "http://exponent.fm"
   },
   {
     "title": "Freak Show",
@@ -84,10 +78,22 @@
     "htmlUrl": "https://logbuch-netzpolitik.de/"
   },
   {
+    "title": "Plötzlich Bäcker",
+    "image": "ploetzlich-baecker.png",
+    "xmlUrl": "https://ploetz.podigee.io/feed/mp3",
+    "htmlUrl": "http://www.ploetzblog.de/"
+  },
+  {
     "title": "Presentable",
     "image": "presentable.png",
     "xmlUrl": "https://www.relay.fm/presentable/feed",
     "htmlUrl": "https://www.relay.fm/presentable"
+  },
+  {
+    "title": "Schlusskonferenz",
+    "image": "schlusskonferenz.png",
+    "xmlUrl": "https://schlusskonferenz.podigee.io/feed/aac",
+    "htmlUrl": "https://rasenfunk.de/schlusskonferenz"
   },
   {
     "title": "Sprachnachrichten",
@@ -96,10 +102,34 @@
     "htmlUrl": "https://sprachnachrichten.fm/"
   },
   {
+    "title": "The Stratechery Podcast",
+    "image": "stratechery.jpg",
+    "xmlUrl": "https://stratechery.com",
+    "htmlUrl": "https://stratechery.com"
+  },
+  {
+    "title": "Tribünengespräch",
+    "image": "tribuenengespraech.png",
+    "xmlUrl": "https://tribuenengespraech.podigee.io/feed/aac",
+    "htmlUrl": "https://rasenfunk.de/tribuenengespraech"
+  },
+  {
     "title": "UKW",
     "image": "ukw.jpg",
     "xmlUrl": "https://ukw.fm/feed/mp3/",
     "htmlUrl": "https://ukw.fm/"
+  },
+  {
+    "title": "Under the Radar",
+    "image": "under-the-radar.png",
+    "xmlUrl": "https://www.relay.fm/radar/feed",
+    "htmlUrl": "https://www.relay.fm/radar"
+  },
+  {
+    "title": "Wett-Brötchen",
+    "image": "wett-broetchen.jpg",
+    "xmlUrl": "https://www.wett-broetchen.de/feed/mp3/",
+    "htmlUrl": "https://www.wett-broetchen.de/"
   },
   {
     "title": "WRINT: Wer redet ist nicht tot",
