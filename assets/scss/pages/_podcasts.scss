@@ -31,6 +31,7 @@
 }
 
 .podcast-item__meta {
+  display: flex;
   font-size: $type-scale-7;
 
   @media (min-width: 960px) {
@@ -53,8 +54,12 @@
 }
 
 .podcast-item__meta-item {
-  display: inline-flex;
+  display: block;
   align-items: center;
   margin-left: $spacer-1;
   line-height: $leading-tight;
+
+  &:first-child {
+    margin: 0;
+  }
 }

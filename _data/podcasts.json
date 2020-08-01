@@ -31,14 +31,13 @@
   },
   {
     "title": "Design Systems Podcast",
-    "image": "dsp.jpg",
+    "image": "design-systems-podcast.jpg",
     "xmlUrl": "https://feeds.buzzsprout.com/887923.rss",
-    "htmlUrl": "https://basalt.io/ds-podcast"
+    "htmlUrl": "https://www.designsystemspodcast.com"
   },
   {
     "title": "Dithering",
     "image": "dithering.jpg",
-    "xmlUrl": "https://dithering.fm",
     "htmlUrl": "https://dithering.fm"
   },
   {
@@ -104,7 +103,6 @@
   {
     "title": "The Stratechery Podcast",
     "image": "stratechery.jpg",
-    "xmlUrl": "https://stratechery.com",
     "htmlUrl": "https://stratechery.com"
   },
   {

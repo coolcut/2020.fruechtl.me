@@ -17,13 +17,15 @@ metatitle: Podcasts
         <div class="podcast-item__content">
           <h2 class="podcast-item__title">{{podcast.title}}</h2>
           <div class="podcast-item__meta">
-            <span class="podcast-list__meta-item">
+            <span class="podcast-item__meta-item">
               <a href="{{podcast.htmlUrl}}">Website</a>
             </span>
+            {% if podcast.xmlUrl %}
             <span class="podcast-item__meta-item"> • </span>
             <span class="podcast-item__meta-item">
               <a href="{{podcast.xmlUrl}}">Feed</a>
             </span>
+            {% endif %}
           </div>
         </div>
       </li>
