@@ -11,7 +11,7 @@ tags:
 Some weeks ago, [I wrote about CouchTimes](/journal/building-an-ios-application-in-swiftui/), the iOS tv show tracking application, I'm currently working on. In the past weeks, I did some progress on different angles of the application and I wanted to start sharing them more closely on this blog.
 
 - I completely redid the search views from a technical standpoint
-  - The search now support more suggestions
+- The search now support more suggestions
 - All detail view now lives inside a sheet
 - Better data sharing inside the application with [@EnvironmentObject](https://developer.apple.com/documentation/swiftui/environmentobject)
 - Better image API handling ⇒ default to english localised covers and posters
