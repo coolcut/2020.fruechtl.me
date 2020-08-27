@@ -30,6 +30,12 @@
     "htmlUrl": "http://spec.fm/podcasts/design-details"
   },
   {
+    "title": "Design Life",
+    "image": "design-life.jpg",
+    "xmlUrl": "https://rss.simplecast.com/podcasts/6750/rss",
+    "htmlUrl": "https://www.designlife.fm"
+  },
+  {
     "title": "Design Systems Podcast",
     "image": "design-systems-podcast.jpg",
     "xmlUrl": "https://feeds.buzzsprout.com/887923.rss",
@@ -57,6 +63,12 @@
     "image": "freakshow.jpg",
     "xmlUrl": "https://feeds.metaebene.me/freakshow/m4a",
     "htmlUrl": "https://freakshow.fm/"
+  },
+  {
+    "title": "Geld ganz einfach - Der Podcast mit Said von Finanztip",
+    "image": "geld-ganz-einfach.jpg",
+    "xmlUrl": "https://geld-ganz-einfach-saidis-finanztip-podcast.podigee.io/feed/mp3",
+    "htmlUrl": "https://www.finanztip.de/podcast/geld-ganz-einfach/"
   },
   {
     "title": "Lage der Nation",
