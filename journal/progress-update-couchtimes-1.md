@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "Progress Update: Couchtimes #1"
+title: "Progress Update: CouchTimes #1"
 date: 2020-08-27T15:00:00
 tags:
   - SwiftUI
