@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  // Posts Collection
   eleventyConfig.addCollection("posts", function(collection) {
     return collection.getFilteredByGlob(["journal/*.md"]);
   });
@@ -25,53 +26,46 @@ module.exports = function(eleventyConfig) {
     }).slice(0, 4);
   });
 
-  eleventyConfig.addCollection("photos", function(collection) {
-    return collection.getFilteredByGlob(["photos/*.md"]);
+  // Work Collection
+  eleventyConfig.addCollection("work", function(collection) {
+    return collection.getFilteredByGlob(["work/*.md"]).sort(function(a, b) {
+      return a.data.sortId - b.data.sortId;
+    });
   });
 
+  eleventyConfig.addCollection("workPreview", function(collection) {
+    return collection.getFilteredByGlob(["work/*.md"]).sort(function(a, b) {
+      return a.data.sortId - b.data.sortId;
+    }).slice(0, 2);
+  });
+
+  // Side Projects Collection
+  eleventyConfig.addCollection("sideProjects", function(collection) {
+    return collection.getFilteredByGlob(["side-projects/*.md"]).sort(function(a, b) {
+      return a.data.sortId - b.data.sortId;
+    });
+  });
+
+  // Date Formatting
   eleventyConfig.addFilter("readableDate", dateObj => {
     return moment.utc(dateObj).format("dddd, MMMM Do YYYY");
+  });
+
+  eleventyConfig.addFilter("readableDateShort", dateObj => {
+    return moment.utc(dateObj).format("MMMM DD, YYYY");
   });
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return moment.utc(dateObj).format("YYYY-MM-DD");
   });
 
+  // URL Formatting
   eleventyConfig.addFilter('simpleURL', (url) => {
     var url = new URL(url);
     return url.hostname.replace("www.","");
   });
 
-  eleventyConfig.addFilter('photoList', (image) => {
-    const UPLOAD_URL = "/uploads/photos/"
-
-    const i = image.lastIndexOf('.');
-    const IMAGE_NAME = image.substring(0, i);
-    const IMAGE_EXT = image.substring(i + 1);
-
-    return `${UPLOAD_URL}${IMAGE_NAME}-cover.${IMAGE_EXT}`
-  });
-
-  eleventyConfig.addFilter('photoSingle', (image) => {
-    const UPLOAD_URL = "/uploads/photos/"
-
-    const i = image.lastIndexOf('.');
-    const IMAGE_NAME = image.substring(0, i);
-    const IMAGE_EXT = image.substring(i + 1);
-
-    return `${UPLOAD_URL}${IMAGE_NAME}.${IMAGE_EXT}`
-  });
-
-  eleventyConfig.addFilter('photoSingleSourceSet', (image) => {
-    const UPLOAD_URL = "/uploads/photos/"
-
-    const i = image.lastIndexOf('.');
-    const IMAGE_NAME = image.substring(0, i);
-    const IMAGE_EXT = image.substring(i + 1);
-
-    return `${UPLOAD_URL}${IMAGE_NAME}-500px.${IMAGE_EXT} 500w, ${UPLOAD_URL}${IMAGE_NAME}-800px.${IMAGE_EXT} 800w, ${UPLOAD_URL}${IMAGE_NAME}-1200px.${IMAGE_EXT} 1200w, ${UPLOAD_URL}${IMAGE_NAME}.${IMAGE_EXT} 1500w, ${UPLOAD_URL}${IMAGE_NAME}-2000px.${IMAGE_EXT} 2000w`
-  });
-
+  // Podcast Cover
   eleventyConfig.addFilter('podcastCover', (image) => {
     const UPLOAD_URL = "/uploads/podcasts/"
 

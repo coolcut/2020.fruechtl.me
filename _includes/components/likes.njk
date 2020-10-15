@@ -1,9 +1,9 @@
 <ul class="list list--link">
-{% for like in likes %}
+{% for like in paginatedLikes %}
   <li class="list__item">
-    <a class="list__item-link" href="{{ like.href }}">
+    <a class="list__item-link" href="{{ like.href }}" target="_blank">
       <h3 class="title-3 list__item__title">{{ like.description }}</h3>
-      <span class="list__item__caption">{{ like.href | simpleURL }}</span>
+      <span class="list__item__caption">{{ like.href | simpleURL }} · {{ like.time | readableDateShort }}</span>
     </a>
   </li>
 {% endfor %}

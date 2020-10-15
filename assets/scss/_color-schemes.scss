@@ -2,49 +2,30 @@
 ||  Color Schemes
 ------------------------------------------------------------------- */
 body {
-  --background-color: #f5f3ef;
-  --text-primary-color: #{$black-90};
-  --text-secondary-color: #{$black-60};
-  --border-color: #{$black-10};
-  --text-action-color: rgba(73, 71, 215, 0.9);
-  --text-action-hover-color: rgba(73, 71, 215, 0.7);
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    --background-color: #{$black-90};
-    --text-primary-color: #{$white-90};
-    --text-secondary-color: #{$white-60};
-    --border-color: #{$white-10};
-    --text-action-color: rgba(255, 159, 10, 0.9);
-    --text-action-hover-color: rgba(255, 159, 10, 0.7);
-  }
+  --background-color: #{$black-90};
+  --text-primary-color: #{$white-90};
+  --text-secondary-color: #{$white-60};
+  --border-color: #{$white-10};
+  --text-action-color: rgba(255, 159, 10, 1);
+  --text-action-hover-color: rgba(255, 159, 10, 1);
 }
 
 .cs-homepage {
-  --background-color: #f1f6f9;
-
-  @media (prefers-color-scheme: dark) {
-    --background-color: #12232b;
-  }
+  --background-color: #12232b;
 }
 
 .cs-about {
-  --background-color: #e9edf7;
-  --text-action-color: rgba(220, 51, 24, 0.9);
-  --text-action-hover-color: rgba(220, 51, 24, 0.7);
+  --background-color: #0f1729;
+  --text-action-color: rgba(255, 94, 94, 1);
+  --text-action-hover-color: rgba(255, 94, 94, 1);
+}
 
-  @media (prefers-color-scheme: dark) {
-    --background-color: #0f1729;
-    --text-action-color: rgba(224, 103, 81, 1);
-    --text-action-hover-color: rgba(224, 103, 81, 0.7);
-  }
+.cs-work {
+  --background-color: #211726;
+  --text-action-color: rgba(255, 94, 94, 1);
+  --text-action-hover-color: rgba(255, 94, 94, 1);
 }
 
 .cs-likes {
-  --background-color: #f7edf1;
-
-  @media (prefers-color-scheme: dark) {
-    --background-color: #391823;
-  }
+  --background-color: #391823;
 }

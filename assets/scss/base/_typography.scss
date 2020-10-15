@@ -25,6 +25,7 @@ a {
   text-underline-offset: 6px;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: 2px;
+  text-decoration-color: var(--border-color);
 
   &:hover {
     color: var(--text-action-hover-color);
@@ -69,12 +70,8 @@ samp {
   font-size: $type-scale-6;
   font-weight: bold;
   color: var(--text-primary-color);
-  background-color: #{$black-10};
+  background-color: #{$white-10};
   border-radius: $border-radius-default;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #{$white-10};
-  }
 }
 
 /* ------------------------------------------------------------------
@@ -112,6 +109,15 @@ h4 {
   font-family: $font-family-body;
 }
 
+.title-giant {
+  font-size: 56px;
+  line-height: $leading-tight;
+
+  @media (min-width: 960px) {
+    font-size: 80px;
+  }
+}
+
 .title-1 {
   font-size: 40px;
   line-height: $leading-tight;
@@ -133,4 +139,12 @@ h4 {
 .title-3 {
   font-size: 24px;
   line-height: 32px;
+}
+
+.body {
+  font-family: $font-family-body;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: $leading-normal;
+  color: $white-60;
 }

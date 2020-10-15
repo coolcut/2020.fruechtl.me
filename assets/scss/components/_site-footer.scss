@@ -2,13 +2,18 @@
 ||  Site Footer
 ------------------------------------------------------------------- */
 .c-site-footer {
+  border-top: 1px dashed var(--border-color);
+}
+
+.c-site-footer__content {
   padding-top: $spacer-5;
   padding-bottom: $spacer-4;
 
   @media (min-width: 960px) {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas: "left content right";
-    padding: $spacer-7 0 $spacer-5;
+    padding-top: $spacer-7;
+    padding-bottom: $spacer-5;
   }
 }
 

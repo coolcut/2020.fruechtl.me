@@ -6,7 +6,7 @@
   display: grid;
   grid-gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
-  margin: 0;
+  margin: 0 0 $leading-13;
   padding: 0;
   list-style: none;
 

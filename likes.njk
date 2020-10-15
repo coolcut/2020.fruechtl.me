@@ -2,6 +2,10 @@
 layout: layouts/base.njk
 metatitle: Likes
 bodyClass: cs-likes
+pagination:
+  data: likes
+  size: 25
+  alias: paginatedLikes
 ---
 
 <main class="grid grid--basic">
@@ -10,5 +14,6 @@ bodyClass: cs-likes
   </aside>
   <section class="grid__content-element">
     {% include "components/likes.njk" %}
+    {% include "components/pagination.njk" %}
   </section>
 </main>

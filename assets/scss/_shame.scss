@@ -1,13 +1,3 @@
 /* ------------------------------------------------------------------
 ||  Shame
 ------------------------------------------------------------------- */
-.redesign-notice {
-  padding: $spacer-1 $spacer-4;
-  font-size: $type-scale-6;
-  text-align: center;
-  background-color: #{$black-10};
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #{$black-30};
-  }
-}

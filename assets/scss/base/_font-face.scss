@@ -36,3 +36,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Operator Mono";
+  src: url("/fonts/operator-mono-medium.woff2") format("woff2"),
+    url("/fonts/operator-mono-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

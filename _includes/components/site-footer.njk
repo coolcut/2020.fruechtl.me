@@ -1,21 +1,27 @@
-<footer class="c-site-footer grid">
-  <ul class="c-site-footer__nav">
-    <li class="c-site-footer__nav-item">
-      <a href="https://photos.fruechtl.me">Photos</a>
-    </li>
-    <li class="c-site-footer__nav-item">
-      <a href="{{ '/podcasts' | url }}">Podcasts</a>
-    </li>
-    <li class="c-site-footer__nav-item">
-      <a href="{{ '/journal/feed.xml' | url }}">RSS Feed</a>
-    </li>
-    <li class="c-site-footer__nav-item">
-      <a href="{{ '/impressum' | url }}">Impressum</a>
-    </li>
-  </ul>
+<footer class="c-site-footer">
+  <div class="c-site-footer__content grid">
+    <ul class="c-site-footer__nav">
+      <li class="c-site-footer__nav-item">
+        <a href="https://photos.fruechtl.me">Photos</a>
+      </li>
+      <li class="c-site-footer__nav-item">
+        <a href="{{ '/likes' | url }}">Likes</a>
+      </li>
+      <li class="c-site-footer__nav-item">
+        <a href="{{ '/podcasts' | url }}">Podcasts</a>
+      </li>
+      <li class="c-site-footer__nav-item">
+        <a href="{{ '/journal/feed.xml' | url }}">RSS Feed</a>
+      </li>
+      <li class="c-site-footer__nav-item">
+        <a href="{{ '/impressum' | url }}">Impressum</a>
+      </li>
+    </ul>
+  </div>
 </footer>
 
 {% if layout == "layouts/post.njk" or bodyClass == "typography-test" %}
   <script src="/node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
 {% endif %}
 
+<script>{% include "js/main.js" %}</script>
