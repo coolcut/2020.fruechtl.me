@@ -1,0 +1,13 @@
+<nav class="pagination" aria-labelledby="my-pagination">
+  <ol class="pagination-list">
+    <li class="pagination-list__item pagination-list__item--prev">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.776 5.622a.989.989 0 00-1.1.306L.224 11.371a.989.989 0 000 1.254l4.453 5.443a.99.99 0 001.756-.627v-3.956a.25.25 0 01.25-.25h10.139a.25.25 0 01.25.25v3.461a1.237 1.237 0 102.474 0v-9.9a1.237 1.237 0 10-2.474 0v3.462a.25.25 0 01-.25.25H6.683a.25.25 0 01-.25-.25V6.554a.99.99 0 00-.657-.932zM24 7.049a1.237 1.237 0 10-2.474 0v9.9a1.237 1.237 0 102.474 0z"/></svg><span>Previous</span></a>{% endif %}</li>
+    {%- for pageEntry in pagination.pages %}
+      {% if page.url == pagination.hrefs[ loop.index0 ] %}
+      <li class="pagination-list__item pagination-list__item--active" aria-current="page"><span>{{ loop.index }}</span></li>
+      {% else %}
+      <li class="pagination-list__item"><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} class="active" aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+      {% endif %}
+    {%- endfor %}
+    <li class="pagination-list__item pagination-list__item--next">{% if pagination.href.next %}<a href="{{ pagination.href.next }}"><span>Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.237 18.183a1.237 1.237 0 001.237-1.237v-9.9A1.237 1.237 0 000 7.049v9.9a1.237 1.237 0 001.237 1.234zM5.691 18.183a1.237 1.237 0 001.237-1.237v-3.461a.25.25 0 01.25-.25h10.139a.25.25 0 01.25.25v3.956a.99.99 0 001.756.627l4.453-5.444a.987.987 0 000-1.253l-4.453-5.444a.99.99 0 00-1.756.627v4.206H7.178a.249.249 0 01-.25-.25V7.049a1.237 1.237 0 00-2.474 0v9.9a1.237 1.237 0 001.237 1.234z"/></svg></a>{% endif %}</li>
+  </ol>
+</nav>

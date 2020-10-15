@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+---
+
+<main class="case-study-page">
+  <section class="cs-page-hero f-mb4">
+    <div class="grid grid--basic">
+      <div class="grid__content-element">
+        <h1 class="title-1 f-ma0">{{ title }}</h1>
+      </div>
+    </div>
+  </section>
+  <section class="f-mb7">
+    <div class="wrapper">
+      <div class="{{ heroImageClass }}">
+        <figure class="cs-page-cover">
+          <img  srcset="/uploads/work/{{ heroImage }} 400w, /uploads/work/{{ heroImage }} 600w, /uploads/work/{{ heroImage }} 800w, /uploads/work/{{ heroImage }} 1000w, /uploads/work/{{ heroImage }} 1500w, /uploads/work/{{ heroImage }} 2000w" sizes="(min-width: 1000px) 1000px, 100vw" src="/uploads/work/{{ heroImage }}" alt="{{ heroImageAlt }}">
+        </figure>
+      </div>
+    </div>
+  </section>
+  {{ layoutContent | safe }}
+</main>

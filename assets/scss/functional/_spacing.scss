@@ -1,0 +1,171 @@
+/*------------------------------------------------------------------
+||  Variables
+-------------------------------------------------------------------*/
+$spacing-list: (
+  0: $spacer-0,
+  1: $spacer-1,
+  2: $spacer-2,
+  3: $spacer-3,
+  4: $spacer-4,
+  5: $spacer-5,
+  6: $spacer-6,
+  7: $spacer-7,
+  8: $spacer-8,
+);
+
+/*------------------------------------------------------------------
+||  Variables
+-------------------------------------------------------------------*/
+@each $index, $spacing in $spacing-list {
+  .f-ma#{$index} {
+    margin: $spacing;
+  }
+  .f-mh#{$index} {
+    margin-left: $spacing;
+    margin-right: $spacing;
+  }
+  .f-mv#{$index} {
+    margin-top: $spacing;
+    margin-bottom: $spacing;
+  }
+  .f-ml#{$index} {
+    margin-left: $spacing;
+  }
+  .f-mr#{$index} {
+    margin-right: $spacing;
+  }
+  .f-mt#{$index} {
+    margin-top: $spacing;
+  }
+  .f-mb#{$index} {
+    margin-bottom: $spacing;
+  }
+
+  .f-pa#{$index} {
+    padding: $spacing;
+  }
+  .f-pv#{$index} {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+  }
+  .f-ph#{$index} {
+    padding-left: $spacing;
+    padding-right: $spacing;
+  }
+  .f-pt#{$index} {
+    padding-top: $spacing;
+  }
+  .f-pl#{$index} {
+    padding-left: $spacing;
+  }
+  .f-pr#{$index} {
+    padding-right: $spacing;
+  }
+  .f-pb#{$index} {
+    padding-bottom: $spacing;
+  }
+}
+
+@media (min-width: 640px) {
+  @each $index, $spacing in $spacing-list {
+    .f-ma#{$index}-ns {
+      margin: $spacing;
+    }
+    .f-mh#{$index}-ns {
+      margin-left: $spacing;
+      margin-right: $spacing;
+    }
+    .f-mv#{$index}-ns {
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+    .f-ml#{$index}-ns {
+      margin-left: $spacing;
+    }
+    .f-mr#{$index}-ns {
+      margin-right: $spacing;
+    }
+    .f-mt#{$index}-ns {
+      margin-top: $spacing;
+    }
+    .f-mb#{$index}-ns {
+      margin-bottom: $spacing;
+    }
+
+    .f-pa#{$index}-ns {
+      padding: $spacing;
+    }
+    .f-pv#{$index}-ns {
+      padding-top: $spacing;
+      padding-bottom: $spacing;
+    }
+    .f-ph#{$index}-ns {
+      padding-left: $spacing;
+      padding-right: $spacing;
+    }
+    .f-pt#{$index}-ns {
+      padding-top: $spacing;
+    }
+    .f-pl#{$index}-ns {
+      padding-left: $spacing;
+    }
+    .f-pr#{$index}-ns {
+      padding-right: $spacing;
+    }
+    .f-pb#{$index}-ns {
+      padding-bottom: $spacing;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  @each $index, $spacing in $spacing-list {
+    .f-ma#{$index}-l {
+      margin: $spacing;
+    }
+    .f-mh#{$index}-l {
+      margin-left: $spacing;
+      margin-right: $spacing;
+    }
+    .f-mv#{$index}-l {
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+    .f-ml#{$index}-l {
+      margin-left: $spacing;
+    }
+    .f-mr#{$index}-l {
+      margin-right: $spacing;
+    }
+    .f-mt#{$index}-l {
+      margin-top: $spacing;
+    }
+    .f-mb#{$index}-l {
+      margin-bottom: $spacing;
+    }
+
+    .f-pa#{$index}-l {
+      padding: $spacing;
+    }
+    .f-pv#{$index}-l {
+      padding-top: $spacing;
+      padding-bottom: $spacing;
+    }
+    .f-ph#{$index}-l {
+      padding-left: $spacing;
+      padding-right: $spacing;
+    }
+    .f-pt#{$index}-l {
+      padding-top: $spacing;
+    }
+    .f-pl#{$index}-l {
+      padding-left: $spacing;
+    }
+    .f-pr#{$index}-l {
+      padding-right: $spacing;
+    }
+    .f-pb#{$index}-l {
+      padding-bottom: $spacing;
+    }
+  }
+}

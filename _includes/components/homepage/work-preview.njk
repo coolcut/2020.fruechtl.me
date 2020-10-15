@@ -1,0 +1,21 @@
+<section class="dribbble-preview">
+  <div class="grid grid--basic">
+    <aside class="grid__trailing-element">
+      <h3 class="title-3">Work</h3>
+    </aside>
+    <div class="grid__content-element--full">
+      <div class="work-list">
+      {% for item in collections.workPreview %}
+      <a class="work-list__item" href="{{ item.url | url }}">
+        <div class="work-list__item-inner">
+          <h3>{{ item.data.title }}</h3>
+          <figure>
+            <img srcset="/uploads/work/{{ item.data.previewImage }} 400w, /uploads/work/{{ item.data.previewImage }} 600w, /uploads/work/{{ item.data.previewImage }} 800w, /uploads/work/{{ item.data.previewImage }} 1000w, /uploads/work/{{ item.data.previewImage }} 1500w, /uploads/work/{{ item.data.previewImage }} 2000w" sizes="(min-width: 1000px) 1000px, 100vw" src="/uploads/work/{{ item.data.previewImage }}" alt="{{ heroImageAlt }}">
+          </figure>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    </div>
+  </div>
+</section>

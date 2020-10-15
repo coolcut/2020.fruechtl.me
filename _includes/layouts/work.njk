@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="intro">
+  <div class="wrapper">
+    <h2 class="title-1 intro__title">{{ title }}</h2>
+    <div class="intro__grid">
+      {{ content | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="wrapper">
+    <div class="work-list">
+      {% for item in collections.work %}
+      <a class="work-list__item" href="{{ item.url | url }}">
+        <div class="work-list__item-inner">
+          <h3>{{ item.data.title }}</h3>
+          <figure>
+            <img srcset="/uploads/work/{{ item.data.previewImage }} 400w, /uploads/work/{{ item.data.previewImage }} 600w, /uploads/work/{{ item.data.previewImage }} 800w, /uploads/work/{{ item.data.previewImage }} 1000w, /uploads/work/{{ item.data.previewImage }} 1500w, /uploads/work/{{ item.data.previewImage }} 2000w" sizes="(min-width: 1000px) 1000px, 100vw" src="/uploads/work/{{ item.data.previewImage }}" alt="{{ heroImageAlt }}">
+          </figure>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="side-projects">
+  <div class="wrapper">
+    <h2 class="title-2 f-mb5">Side Projects</h2>
+    <div class="side-projects-list">
+      {% for item in collections.sideProjects %}
+      <a class="side-projects__item" href="{{ item.data.link | url }}">
+        <h3 class="title-3 f-mb1">{{ item.data.title }}</h3>
+        <p class="f-ma0">{{ item.templateContent | safe }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

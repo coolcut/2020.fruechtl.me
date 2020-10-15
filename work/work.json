@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/case-study.njk",
+  "permalink": "work/{{ title | slug }}/"
+}

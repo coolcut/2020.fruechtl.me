@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------------
+||  Collapse
+------------------------------------------------------------------- */
+.collapse {
+  border-top: 1px solid var(--border-color);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+
+  .collapse__content {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.collapse--open {
+  .collapse__content {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .collapse__icon {
+    position: relative;
+    transform: rotate(45deg);
+  }
+}
+
+.collapse__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.collapse__title {
+  margin: 0 0 4px;
+}
+
+.collapse__subtitle {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+}

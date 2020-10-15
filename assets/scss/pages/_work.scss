@@ -1,0 +1,119 @@
+/* ------------------------------------------------------------------
+||  Work
+------------------------------------------------------------------- */
+.cs-work {
+  .intro__title {
+    margin: 0 0 48px;
+  }
+
+  .intro__grid {
+    columns: 1;
+    margin: 0 0 96px;
+    column-gap: 48px;
+
+    @media (min-width: 640px) {
+      columns: 2;
+    }
+
+    @media (min-width: 960px) {
+      columns: 3;
+    }
+  }
+}
+
+.work {
+  margin: 0 0 96px;
+  padding: 0 0 96px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.work-list {
+  display: grid;
+  grid-gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 960px) {
+    grid-gap: 48px;
+  }
+}
+
+.work-list__item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+  border: 1px dashed var(--border-color);
+  border-radius: $border-radius-default;
+  text-decoration: none;
+  transition: all 0.24s;
+
+  figure {
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: all 0.24s;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--text-secondary-color);
+
+    figure {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.work-list__item-inner {
+  display: block;
+  position: absolute;
+  padding: 24px;
+  top: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  z-index: -1;
+  overflow: hidden;
+  background-color: $black-10;
+  border-radius: $border-radius-default;
+}
+
+.work-list__item a h3 {
+  font-family: $font-family-body;
+  font-size: 1.5rem;
+}
+
+.side-projects {
+  margin: 0 0 96px;
+}
+
+.side-projects-list {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 960px) {
+    grid-gap: 48px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.side-projects__item {
+  @extend .list__item-link;
+  text-decoration: none;
+
+  p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-secondary-color);
+  }
+}

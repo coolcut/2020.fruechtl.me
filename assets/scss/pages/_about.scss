@@ -1,0 +1,72 @@
+/* ------------------------------------------------------------------
+||  About
+------------------------------------------------------------------- */
+.biography {
+  margin: 0 0 $spacer-5;
+  @media (min-width: 960px) {
+    margin: 0 0 $spacer-7;
+  }
+}
+
+.about-section {
+  padding: $spacer-5 0;
+  border-top: 1px dashed var(--border-color);
+
+  @media (min-width: 960px) {
+    padding: $spacer-7 0;
+  }
+}
+
+.resume-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-list__item {
+  &:first-child {
+    .collapse {
+      border-top: none;
+    }
+
+    .collapse__header {
+      padding-top: 0;
+    }
+  }
+}
+
+.biography-card {
+  padding: $leading-6;
+  background-color: $black-10;
+  border-radius: $border-radius-default;
+}
+
+.biography-card__title {
+  margin: 0 0 $leading-10;
+}
+
+.biography-form {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  margin: 0 0 $leading-6;
+}
+
+.biography-form__label {
+  display: block;
+  position: absolute;
+  top: -#{$leading-7};
+  font-size: $type-scale-7;
+  font-weight: bold;
+  line-height: $leading-none;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+}
+
+.biography-form__label--longest {
+  right: 0;
+}
+
+.biography-variant--hide {
+  display: none;
+}

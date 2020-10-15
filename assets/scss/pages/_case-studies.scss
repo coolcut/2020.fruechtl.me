@@ -1,0 +1,98 @@
+/* ------------------------------------------------------------------
+||  Case Studies
+------------------------------------------------------------------- */
+.cs-area-with-divider {
+  margin: 0 0 96px;
+  padding: 0 0 96px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.cs-page-feature__cover {
+  padding: 72px 48px;
+  background-color: $black-10;
+  border-radius: $border-radius-default;
+}
+
+.cs-page-feature__cover--no-vertical-space {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.cs-page-cover {
+  margin: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.c-project-info__item {
+  margin: 0 0 $spacer-4;
+
+  @media (min-width: 960px) {
+    text-align: right;
+  }
+}
+
+.c-project-info__title {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: $leading-normal;
+}
+
+.c-project-info__text {
+  margin: 0;
+  font-weight: normal;
+  line-height: $leading-normal;
+  color: $white-60;
+}
+
+.cs-page-project-preview {
+  padding: $spacer-1;
+  border-radius: $border-radius-default;
+  border: 1px dashed var(--border-color);
+}
+
+.cs-page-project-preview--center {
+  text-align: center;
+}
+
+.cs-page-project-preview__image {
+  width: 100%;
+  border-radius: $border-radius-small;
+}
+
+.cs-preview-wrapper {
+  padding: 24px;
+  background-color: $black-10;
+  border-radius: $border-radius-default;
+
+  figure {
+    margin: 0;
+  }
+
+  figure img {
+    margin: 0 0 16px;
+  }
+
+  figcaption {
+    font-family: $font-family-mono;
+    font-size: $type-scale-7;
+  }
+
+  @media (min-width: 960px) {
+    padding: $spacer-5;
+  }
+}
+
+.cs-preview-wrapper--tight {
+  @media (min-width: 960px) {
+    padding: $spacer-5 $spacer-8;
+  }
+}
+
+.cs-preview-wrapper--no-caption {
+  figure img {
+    margin: 0;
+  }
+}
