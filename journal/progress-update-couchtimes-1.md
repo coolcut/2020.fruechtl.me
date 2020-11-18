@@ -17,7 +17,7 @@ Some weeks ago, [I wrote about CouchTimes](/journal/building-an-ios-application-
 - Better image API handling ⇒ default to english localised covers and posters
 - Much more little details
 
-On to of everything, I also started to push new releases to [TestFlight](https://developer.apple.com/testflight/) now. If you are interested in joining this testing round, [please write a mail](mailto:support@couchtim.es) (you need to run iOS 14).
+On top of everything, I also started to push new releases to [TestFlight](https://developer.apple.com/testflight/) now. If you are interested in joining this testing round, [please write a mail](mailto:support@couchtim.es) (you need to run iOS 14).
 
 Meanwhile, here is a video of a quick walkthrough:
 
