@@ -32,3 +32,15 @@
     padding: $spacer-4 0 0;
   }
 }
+
+.post-content__wide-image {
+  @media (min-width: 960px) {
+    margin-right: -96px;
+    margin-left: -96px;
+  }
+  
+  @media (min-width: 1280px) {
+    margin-right: -192px;
+    margin-left: -192px;
+  }
+}
