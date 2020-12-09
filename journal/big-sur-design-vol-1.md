@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "macOS Big Sur - Design Changes Vol. 1"
-date: 2020-12-07T20:15:00
+date: 2020-12-09T20:15:00
 tags:
   - macOS
   - design
@@ -37,7 +37,7 @@ On the other hand, the new style provides more consistency, which leads to a cle
 
 In the end, it arguably makes everything more similar which has its pros but also rapidly can bring up different other problems like usability and fast recognition — similar to the [latest redesign of the Google products](https://twitter.com/danidonovan/status/1322356167063031814).
 
-I want to close this segment with a [Twitter Thread from Craig Hockenberry](https://twitter.com/chockenberry/status/1328392677717512192) which highlights a similar question and the new [App Icon from Sketch](https://twitter.com/gavmn/status/1329079284036562945), which I quite like.
+I want to close this segment with a [Twitter thread from Craig Hockenberry](https://twitter.com/chockenberry/status/1328392677717512192) which highlights a similar question.
 
 ## System preferences
 During the following sections (including the next volumes), I will go through some examples and highlight questions and decisions that are not clear to me in Big Sur. All examples have one screenshot made in Catalina (left) and one made in Big Sur (right) to underline the differences.
@@ -64,7 +64,7 @@ A good example of a medium-sized window with many options and states that suffer
 Some other notes based on the info circles:
 1. Same contrast problem with the search field.
 2. The new segmented control style also lacks contrast, especially in comparison to the old style. Because the whole interface is very light, it becomes harder to quickly see the active state (which is now indicated by a white shape). Furthermore, the individual dividers in-between the other inactive items are barely noticeable.
-3. The slider also suffers from bad contrast levels. While the old version also could be improved, and the new sliders arguably look “more modern”, they might be harder to use and not quickly scannable.
+3. The slider also suffers from bad contrast levels. While the old version also could be improved, and the new sliders arguably look “more modern”, they might be harder to use and aren't quickly scannable.
 
 ## That’s all for today
 In Vol. 2, we will look at five other applications from Apple and 3rd party developers and dive more deeply into the changes Big Sur and the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/) introduced.
