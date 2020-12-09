@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "macOS Big Sur - Design Changes Vol. 1"
-date: 2020-12-09T20:15:00
+date: 2020-12-09T22:15:00
 tags:
   - macOS
   - design
@@ -11,11 +11,11 @@ With the latest version of macOS, Apple not only changed the version number from
 
 In an [introductory video from this year's WWDC](https://www.apple.com/105/media/us/macos/big-sur/2020/f14b0c7e-9f7e-4b9f-bd0c-b4b86ee46c92/films/design/macos-design-tpl-cc-us-2020_1280x720h.m3u8), Alan Dye, Apple’s VP of human interface design, talked about the goals and thoughts that went into these design changes. As a goal of this redesign, he mentioned clarity as one of their focus points. While clarity was important, they also wanted to retain the powerful capabilities and simplicity of macOS. 
 
-Furthermore, they wanted to keep the focus on the users’ content and let buttons or controls appear when they are needed. Consistency throughout the ecosystem was another focus that can be recognised in examples like the unification of their icons system called [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/), which already existed on iOS and iPadOS. Additionally, examples like the new sidebar design that also arrived on iPadOS can be highlighted to underline the goals of becoming more consistent.
+Furthermore, they wanted to keep the focus on the users’ content and let buttons or controls appear when they are needed. Consistency throughout the ecosystem was another focus that can be recognised in examples like the unification of their icon system called [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/), which already existed on iOS and iPadOS. Additionally, examples like the new sidebar design that also arrived on iPadOS can be highlighted to underline the goals of becoming more consistent.
 
-All in all, the goals and references in this video were one of the resources I used while trying to understand why Apple made these changes. While I think some changes make Big Sur a “more modern” operating system, I also feel that a lot is still in flux and doesn’t meet the standards and goals Alan Dye were mentioning in the video.
+All in all, the goals and references in this video were one of the resources I used while trying to understand why Apple made these changes. While I think some changes make Big Sur a “more modern” operating system, I also feel that a lot is still in flux and doesn’t meet the standards and goals Alan Dye was mentioning.
 
-While it is always difficult so make sense of decisions from the outside, I highly respect and admire every human who worked on this massive redesign. Nevertheless, I wanted to document some questions I had after using Big Sur for a while.
+While it is always difficult to make sense of decisions from the outside, I highly respect and admire every human who worked on this massive redesign. Nevertheless, I wanted to document some questions I had after using Big Sur for a while.
 
 If you understand German, you can also listen to [episode 15 of my podcast Sprachnachrichten](https://sprachnachrichten.fm/sn015-der-kontrast-und-die-suche/), where my co-host Arne and I talk about this topic.
 
@@ -49,10 +49,10 @@ We will see some questionable patterns throughout the interfaces. For this secti
   <img src="/uploads/journal/system-preferences.jpg" alt="Screenshot of the system preferences window on macOS Catalina and Big Sur">
 </figure>
 
-I quite like the new icons on the system preferences overview. Most of them to me, feels quite at home with the new style Big Sur is promoting. In some instances, they even benefit from their distinct shape and form (e.g. Notifications). Something we already talked about in the section above
+I quite like the new icons on the system preferences overview. Most of them to me, feel quite at home with the new style Big Sur is promoting. In some instances, they even benefit from their distinct shape and form (e.g. Notifications). Something we already talked about in the section above.
 
 Some other notes based on the info circles:
-1. One of the most annoying patterns throughout the new Big Sur interfaces is the lack of contrast. One prominent victim is the search field inside the toolbar. The text field itself is hard to distinguish from the very light toolbar, even on a iMac 5K with full brightness settings.
+1. One of the most annoying patterns throughout the new Big Sur interfaces is the lack of contrast. One prominent victim is the search field inside the toolbar. The text field itself is hard to distinguish from the very light toolbar, even on an iMac 5K with full brightness settings.
 
 ### System preferences - Keyboard
 <figure class="post-content__wide-image">
