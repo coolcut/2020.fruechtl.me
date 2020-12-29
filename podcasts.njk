@@ -10,25 +10,28 @@ metatitle: Podcasts
   <section class="grid__content-element--full">
     <ul class="podcast-list">
     {% for podcast in podcasts %}
+      {% if podcast.fields.subscription == "Active" %}
       <li class="podcast-item">
         <div class="podcast-item__cover">
-          <img src="{{ podcast.image | podcastCover }}" alt="">
+          {% set image = podcast.fields.image[0] %}
+          <img src="{{ image.thumbnails.large.url }}" alt="">
         </div>
         <div class="podcast-item__content">
-          <h2 class="podcast-item__title">{{podcast.title}}</h2>
+          <h2 class="podcast-item__title">{{podcast.fields.title}}</h2>
           <div class="podcast-item__meta">
             <span class="podcast-item__meta-item">
-              <a href="{{podcast.htmlUrl}}">Website</a>
+              <a href="{{podcast.fields.htmlUrl}}">Website</a>
             </span>
-            {% if podcast.xmlUrl %}
+            {% if podcast.fields.xmlUrl %}
             <span class="podcast-item__meta-item"> • </span>
             <span class="podcast-item__meta-item">
-              <a href="{{podcast.xmlUrl}}">Feed</a>
+              <a href="{{podcast.fields.xmlUrl}}">Feed</a>
             </span>
             {% endif %}
           </div>
         </div>
       </li>
+      {% endif %}
     {% endfor %}
     </ul>
   </section>
